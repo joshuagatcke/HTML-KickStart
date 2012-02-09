@@ -904,20 +904,24 @@ $(document).ready(function(){
 <li><a href="#btn-icons">Buttons w/Icons</a></li>
 <li><a href="#btn-colors">Button Colors</a></li>
 </ul>
+	
+	<style type="text/css">
+	#btn-example a.button, #btn-example button{margin-bottom:10px;}
+	</style>
 
 	<div id="btn-example" class="tab-content">
-	<div class="col_4">
+	<div class="col_3">
 	<h4>Buttons</h4>
-	<button>Button</button>
+	<button>Button</button><br />
 	<a class="button" href="">A.button</a><br />
-	<button class="small">Small</button> 
+	<button class="small">Small</button> <br />
 	<button class="small" disabled="disabled">Small (disabled)</button><br />
 	<button class="medium">Medium</button><br />
 	<button class="large">Large</button>
 	</div>
 	
 	<!-- BUTTONS W/ICON -->
-	<div class="col_4">
+	<div class="col_3">
 	<h4>Buttons w/Icons</h4>
 	<button class="small"><span class="icon">0</span>Small</button><br />
 	<button class="medium"><span class="icon medium">M</span>Medium</button><br />
@@ -925,14 +929,52 @@ $(document).ready(function(){
 	</div>
 	
 	<!-- BUTTON VARIATIONS -->
-	<div class="col_4">
+	<div class="col_3">
 	<h4>Button Colors</h4>
-	<button class="blue"><span class="icon">f</span>.blue</button>
+	<button class="blue"><span class="icon">f</span>.blue</button><br />
 	<a class="button orange" href=""><span class="icon">3</span>.orange</a><br />
-	<button class="small pink"><span class="icon">p</span>.pink</button> 
-	<button class="small" disabled="disabled"><span class="icon">M</span>Small (disabled)</button><br />
+	<button class="small pink"><span class="icon">p</span>.pink</button><br /> 
 	<button class="medium green"><span class="icon">&nbsp;</span>.green</button><br />
 	<button class="large red"><span class="icon large">m</span>.red</button>
+	</div>
+	
+	<!-- BUTTON STYLES -->
+	<div class="col_3">
+	<h4>Button Styles</h4>
+	<button>default</button><br />
+	<button class="pill"><span class="icon">f</span>.pill</button><br />
+	<a class="button pop" href=""><span class="icon">3</span>.pop</a><br />
+	<button class="inset"><span class="icon">p</span>.inset</button> <br />
+	<button class="square"><span class="icon">M</span>.square</button>
+	</div><div class="clear"></div>
+	
+	<div class="col_12">
+	<h4>Button Bar</h4>
+	<ul class="button-bar">
+	<li><a href=""><span class="icon">7</span> Edit</a></li>
+	<li><a href=""><span class="icon">B</span> Tag</a></li>
+	<li><a href=""><span class="icon">)</span> Upload</a></li>
+	<li><a href=""><span class="icon">p</span></a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href=""><span class="icon">,</span></a></li>
+	<li><a href=""><span class="icon">.</span></a></li>
+	<li><a href=""><span class="icon">T</span></a></li>
+	<li><a href=""><span class="icon">Z</span></a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href="">Item1</a></li>
+	<li><a href=""><span class="icon">p</span> Item2</a></li>
+	<li><a href="">Item3</a></li>
+	<li><a href="">Item4</a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href=""><span class="icon">{</span></a></li>
+	<li><a href=""><span class="icon">}</span></a></li>
+	</ul>
 	</div>
 	</div>
 	
@@ -1425,7 +1467,8 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 </ul>
 
 	<div id="form-example" class="tab-content">
-	<form><div class="col_4">
+	<h4>Form.vertical</h4>
+	<form class="vertical"><div class="col_4">
 	<label for="text1">Text Field</label>
 	<input id="text1" type="text" />
 	
@@ -1448,6 +1491,22 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<div class="col_4">
 	<label for="select1">Select Field</label>
 	<select id="select1">
+	<option value="0">-- Choose --</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+	<option value="3">Option 3</option>
+	</select>
+	
+	<label for="select2">Select.fancy</label>
+	<select id="select2" class="fancy" style="width:90%;">
+	<option value="0">-- Choose --</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+	<option value="3">Option 3</option>
+	</select>
+	
+	<label for="select3">Select.fancy multiple</label>
+	<select id="select3" multiple="multiple" class="fancy" style="width:259px;">
 	<option value="0">-- Choose --</option>
 	<option value="1">Option 1</option>
 	<option value="2">Option 2</option>
@@ -1481,7 +1540,49 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<textarea id="textarea1" placeholder="Placeholder Text"></textarea>
 	
 	<button type="submit">Submit</button>
-	</div></form>
+		</form>
+	</div><div class="clear"></div>
+	<hr />
+	
+	<div class="col_12">
+	<h4>Inline Form Fields (default)</h4>
+	<form>
+	<label for="text21">Label</label>
+	<input type="text" name="text21" placeholder="Username" />
+	<input type="text" name="text22" placeholder="Password "/>
+	<select id="select22" class="fancy">
+	<option value="0">-- Choose --</option>
+	<option value="1">Option 1</option>
+	<option value="2">Option 2</option>
+	<option value="3">Option 3</option>
+	</select>
+	
+	<button type="button" class="small green">Button</button>
+	<input type="checkbox" name="check23" id="check23" /> <label for="check23">Checkbox Label</label>
+	</form>
+	</div>
+	<hr />
+	
+	<style type="text/css">
+	#form-sizes label{border:1px dotted #ccc;}
+	</style>
+	
+	<div id="form-sizes" class="col_12">
+	<h4>Input/Label Sizes</h4>
+	<label class="col_12">label.col_12</label>
+	<input type="text" placeholder=".col_1" class="col_1" /><label class="col_11">label.col_11</label>
+	<input type="text" placeholder=".col_2" class="col_2" /><label class="col_10">label.col_10</label>
+	<input type="text" placeholder=".col_3" class="col_3" /><label class="col_9">label.col_9</label>
+	<input type="text" placeholder=".col_4" class="col_4" /><label class="col_8">label.col_8</label>
+	<input type="text" placeholder=".col_5" class="col_5" /><label class="col_7">label.col_7</label>
+	<input type="text" placeholder=".col_6" class="col_6" /><label class="col_6">label.col_6</label>
+	<input type="text" placeholder=".col_7" class="col_7" /><label class="col_5">label.col_5</label>
+	<input type="text" placeholder=".col_8" class="col_8" /><label class="col_4">label.col_4</label>
+	<input type="text" placeholder=".col_9" class="col_9" /><label class="col_3">label.col_3</label>
+	<input type="text" placeholder=".col_10" class="col_10" /><label class="col_2">label.col_2</label>
+	<input type="text" placeholder=".col_11" class="col_11" /><label class="col_1">label.col_1</label>
+	<input type="text" placeholder=".col_12" class="col_12" />
+	</div>
 	</div>
 	
 	<div id="form-textfield" class="tab-content">
