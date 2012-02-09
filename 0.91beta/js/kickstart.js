@@ -205,15 +205,31 @@ $(document).ready(function(){
 	
 	/*---------------------------------
 		ToolTip - TipTip
-	-----------------------------------*/
+	-----------------------------------*/	
+	
+	// Standard tooltip
 	$('.tooltip, .tooltip-top, .tooltip-bottom, .tooltip-right, .tooltip-left').each(function(){
-		// position 
+		// variables 
 		var tpos = 'top';
+		var content = $(this).attr('title');
+		var dataContent = $(this).attr('data-content');
+		var keepAlive = false;
+		var action = 'hover';
+		
+		// position
 		if($(this).hasClass('tooltip-top')) 	{ tpos = 'top'; 	}
 		if($(this).hasClass('tooltip-right')) 	{ tpos = 'right'; 	}
 		if($(this).hasClass('tooltip-bottom')) 	{ tpos = 'bottom'; 	}
 		if($(this).hasClass('tooltip-left')) 	{ tpos = 'left'; 	}
-		$(this).tipTip({defaultPosition: tpos});
+		
+		// content
+		if(dataContent) { content = $(dataContent).html(); keepAlive = true; }
+		
+		// action (hover or click) defaults to hover
+		if($(this).attr('data-action') == 'click') { action = 'click'; }
+		
+		// tooltip
+		$(this).tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action});
 	});
 	
 	/*---------------------------------

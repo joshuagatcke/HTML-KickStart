@@ -603,6 +603,47 @@ T4B&#8211;1S6
 &lt;/tr&gt;&lt;/tbody&gt;
 &lt;/table&gt;</pre>
 	</div>
+
+<!-- ===================================== 
+	TOOL TIPS 
+===================================== -->
+<h3 id="tooltips">ToolTips</h3>
+<ul class="tabs">
+<li><a href="#tooltip-example">Example</a></li>
+</ul>
+
+	<div id="tooltip-example" class="tab-content">
+	<div class="col_4">
+	<h4>Tooltips</h4>
+	<p>Tooltips are awesome. These tooltips are designed to mimic the default browser tooltips - smart, aware of the edge of the browser window. Simple.</p>
+	<p>Roll over the examples on the right to preview.</p>
+	<p>Use:<br />
+	<code>class="tooltip"</code> + <br />
+	<code class="tooltip" title="my tooltip content">title="my tooltip content"</code></p>
+	</div>
+	
+	<div class="col_4">
+	<h4>Tooltip Positions</h4>
+	<ul>
+	<li><code class="tooltip" title="This is a default (top) tooltip">.tooltip</code> (default)</li>
+	<li><code class="tooltip-top" title="This is a Top tooltip">.tooltip-top</code></li>
+	<li><code class="tooltip-right" title="This is a Right tooltip">.tooltip-right</code></li>
+	<li><code class="tooltip-left" title="This is a Left tooltip">.tooltip-left</code></li>
+	<li><code class="tooltip-bottom" title="This is a Bottom tooltip">.tooltip-bottom</code></li>
+	</ul>
+	</div>
+	
+	<div class="col_4">
+	<h4>Tooltips with HTML Content</h4>
+	<code>.tooltip</code> + <code>data-content="#ID"</code>
+	<hr />
+	<button class="tooltip medium orange pill" data-content="#tooltipcontentID">Hover Over Me</button>
+	<button class="tooltip medium blue pill" data-content="#tooltipcontentID" data-action="click">Click Me</button>
+	<div class="hide"><div class="tooltip-content" id="tooltipcontentID"><h5>HTML Content</h5>
+	<img src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" />
+	<p>This is more HTML content. You can place any HTML in this tooltip.</p></div>
+	</div></div>
+	</div>
 	
 <!-- ===================================== 
 	HORIZONTAL RULES 
