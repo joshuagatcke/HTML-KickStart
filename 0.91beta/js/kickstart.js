@@ -223,6 +223,7 @@ $(document).ready(function(){
 		if($(this).hasClass('tooltip-left')) 	{ tpos = 'left'; 	}
 		
 		// content
+		$('.tooltip-content').removeClass('hide').wrap('<div class="hide"></div>');
 		if(dataContent) { content = $(dataContent).html(); keepAlive = true; }
 		
 		// action (hover or click) defaults to hover
