@@ -32,12 +32,20 @@ a img{border:0;}
 strong,b{color:#000;background:lightyellow;position:relative;top:0;left:0;padding:2px 5px;}
 strike{}
 em,i{}
-hr{clear:both;border-bottom:0;border-top:1px dotted #ccc;border-right:0;border-left:0;margin:30px 0;min-height: 0px;height:1px;}
-hr.alt1{border-style: solid;}
-hr.alt2{border-style: dashed;}
+
+/*---------------------------------
+	UTILITY
+-----------------------------------*/
 .center{text-align:center;}
 .left{text-align:left;}
 .right{text-align:right;}
+
+/*---------------------------------
+	HR
+-----------------------------------*/
+hr{clear:both;border-bottom:0;border-top:1px dotted #ccc;border-right:0;border-left:0;margin:30px 0;min-height: 0px;height:1px;}
+hr.alt1{border-style: solid;}
+hr.alt2{border-style: dashed;}
 
 /*---------------------------------
 	HTML5 ELEMENTS (shim)
@@ -183,45 +191,33 @@ border:1px solid #ddd;
 /*---------------------------------
 	TABLES
 -----------------------------------*/
-table{
-border-collapse: collapse;
-border:1px solid #e5e5e5;
-width:100%;
-margin:20px 0;
-}
+table{width:100%;margin:0 0 10px 0;text-align:left;border-collapse: collapse;}
+	thead, tbody{margin:0;padding:0;}
+	th, td{padding:7px 10px;font-size:0.9em;border-bottom:1px dotted #ddd;text-align:left;}
+	thead th{font-size:0.9em;padding:3px 10px;border-bottom:1px solid #ddd;}
+	tbody tr.last th,
+	tbody tr.last td{border-bottom:0;}
+	
+/* striped */
+table.striped{}
+	table.striped tr.alt{background:#f5f5f5;}
+	table.striped thead th{background:#fff;}
+	table.striped tbody th{background:#f5f5f5;text-align:right;padding-right:15px;border-right:1px dotted #e5e5e5;}
+	table.striped tbody tr.alt th{background:#efefef;}
 
-	thead, tbody{
-	margin:0;
-	padding:0;
-	}
-	
-	tr{}
-	tr.alt{background:#f5f5f5;}
-	
-	th,td{
-	padding:10px;
-	font-weight:normal;
-	}
-	
-	thead th{
-	text-align:left;
-	padding:3px 10px;
-	font-size:0.8em;
-	color:#888;
-	border-bottom:1px solid #ddd;
-	background:#eee;
-	}
-	
-	tbody th{
-	background:#f5f5f5;
-	text-align:right;
-	padding-right:15px;
-	font-size:0.9em;
-	color:#666;
-	border-right:1px solid #e5e5e5;
-	}
-	
-	tbody tr.alt th{background:#efefef;}
+/* tight */
+table.tight{}
+	table.tight th, .tight td{padding:2px 10px;}
+
+/* sortable */
+table.sortable{border:1px solid #ddd;}
+	table.sortable thead th{cursor: pointer;position:relative;top:0;left:0;border-right:1px solid #ddd;}
+	table.sortable thead th:hover{background:#efefef;}
+	table.sortable span.arrow{border-style:solid;border-width:5px;
+	display:block;position:absolute;top:50%;right:5px;font-size:0;
+	border-color:#ccc transparent transparent transparent;
+	line-height:0;height:0;width:0;}
+	table.sortable span.arrow.up{border-color:transparent transparent #ccc transparent;margin-top:-5px;}
 
 /*---------------------------------
 	TABS

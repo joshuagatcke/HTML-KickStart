@@ -46,8 +46,10 @@ position:relative;z-index:1000;}
 	.menu.vertical.right li a{padding-left:25px;padding-right:20px;}
 	.menu.vertical.right li.has-menu span.arrow{right:auto;left:5px;margin-top:-4px;}
 	
-	/*---------------------------------
+	
+/*---------------------------------
 	MENU STYLES
+	EDIT BELOW THIS LINE TO CUSTOMIZE
 -----------------------------------*/
 .menu{
 border:1px solid #ccc;
