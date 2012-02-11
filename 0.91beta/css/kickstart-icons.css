@@ -43,6 +43,7 @@ top:-3px;
 left:0;
 -webkit-font-smoothing: antialiased;
 zoom:1;
+display:none;
 }
 
 .msie .icon{top:-1px;}/* IE ONLY - I know :P */

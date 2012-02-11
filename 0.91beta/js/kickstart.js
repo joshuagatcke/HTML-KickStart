@@ -143,7 +143,7 @@ $(document).ready(function(){
 		Tabs
 	-----------------------------------*/
 	// tab setup
-	$('.tab-content').addClass('clearfix').hide();
+	$('.tab-content').addClass('clearfix').not(':first').hide();
 	$('ul.tabs').each(function(){
 		var current = $(this).find('li.current');
 		if(current.length < 1) { $(this).find('li:first').addClass('current'); }
@@ -152,7 +152,7 @@ $(document).ready(function(){
 	});
 	
 	// tab click
-	$('ul.tabs a').live('click', function(e){
+	$('ul.tabs a[href^="#"]').live('click', function(e){
 		e.preventDefault();
 		var tabs = $(this).parents('ul.tabs').find('li');
 		var tab_next = $(this).attr('href');
@@ -187,9 +187,9 @@ $(document).ready(function(){
 		$(this).parents('div.caption')
 			.attr('class', 'caption '+$(this).attr('class'))
 			.css('width', $(this).width()+'px');
-		if($(this).attr('alt')){ 
+		if($(this).attr('title')){ 
 			$(this).parents('div.caption')
-			.append('<span>'+$(this).attr('alt')+'</span>');
+			.append('<span>'+$(this).attr('title')+'</span>');
 		}
 	});
 	
@@ -230,7 +230,8 @@ $(document).ready(function(){
 		if($(this).attr('data-action') == 'click') { action = 'click'; }
 		
 		// tooltip
-		$(this).tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action});
+		$(this).attr('title','')
+		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action});
 	});
 	
 	/*---------------------------------
@@ -267,10 +268,17 @@ $(document).ready(function(){
 	});
 	
 	/*---------------------------------
+		Icons
+	-----------------------------------*/
+	$('.icon').each(function(){
+		$(this).append('<span aria-hidden="true">'+$(this).attr('data-icon')+'</span>')
+		.css('display', 'inline-block');
+	});
+	
+	/*---------------------------------
 		CSS Helpers
 	-----------------------------------*/
 	if($.browser.msie){ $('body').addClass('msie'); }
-	$('.icon').wrapInner('<span aria-hidden="true"></span>');
 	$('input[type=checkbox]').addClass('checkbox');
 	$('input[type=radio]').addClass('radio');
 	$('input[type=file]').addClass('file');
