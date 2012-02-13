@@ -767,9 +767,9 @@ $(document).ready(function(){
 	});
 	
 	icons.click(function(){
-		var iconClass = $('.icon.selected').attr('class').replace(' selected', "");
 		icons.removeClass('selected');
 		$(this).addClass('selected');
+		var iconClass = $('.icon.selected').attr('class').replace(' selected', "");
 		iconCode.html('&lt;span class=&quot;'+iconClass+'&quot; data-icon=&quot;'+$('.icon.selected').text()+'&quot;&gt;&lt;/span&gt;');
 	});
 });
