@@ -425,6 +425,7 @@ T4B&#8211;1S6
 <li><a href="#table-example">Example</a></li>
 <li><a href="#table">Table</a></li>
 <li><a href="#table-wside">Table w/side TH</a></li>
+<li><a href="#table-styles">Table Styles</a></li>
 </ul>
 
 	<div id="table-example" class="tab-content">
@@ -603,6 +604,30 @@ T4B&#8211;1S6
 &lt;/tr&gt;&lt;/tbody&gt;
 &lt;/table&gt;</pre>
 	</div>
+	
+	<div id="table-styles" class="tab-content">
+<pre>
+&lt;!-- Table striped --&gt;
+&lt;table class=&quot;striped&quot;&gt;
+...
+&lt;/table&gt;
+
+&lt;!-- Table tight --&gt;
+&lt;table class=&quot;tight&quot;&gt;
+...
+&lt;/table&gt;
+
+&lt;!-- Table sortable --&gt;
+&lt;table class=&quot;sortable&quot;&gt;
+...
+&lt;/table&gt;
+
+&lt;!-- Table combined Styles --&gt;
+&lt;table class=&quot;striped tight sortable&quot;&gt;
+...
+&lt;/table&gt;
+</pre>
+	</div>
 
 <!-- ===================================== 
 	TOOL TIPS 
@@ -610,6 +635,8 @@ T4B&#8211;1S6
 <h3 id="tooltips">ToolTips</h3>
 <ul class="tabs">
 <li><a href="#tooltip-example">Example</a></li>
+<li><a href="#tooltip-positions">Positions</a></li>
+<li><a href="#tooltip-html">w/ HTML Content</a></li>
 </ul>
 
 	<div id="tooltip-example" class="tab-content">
@@ -637,12 +664,46 @@ T4B&#8211;1S6
 	<h4>Tooltips with HTML Content</h4>
 	<code>.tooltip</code> + <code>data-content="#ID"</code>
 	<hr />
-	<button class="tooltip medium orange pill" data-content="#tooltipcontentID">Hover Over Me</button>
+	<button class="tooltip medium orange pill" data-content="#tooltipcontentID">Hover Over Me</button>&nbsp;
 	<button class="tooltip medium blue pill" data-content="#tooltipcontentID" data-action="click">Click Me</button>
 	<div class="tooltip-content" id="tooltipcontentID"><h5>HTML Content</h5>
 	<img src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" />
 	<p>This is more HTML content. You can place any HTML in this tooltip.</p></div>
 	</div>
+	</div>
+	
+	<div id="tooltip-positions" class="tab-content">
+<pre>
+&lt;!-- Tooltip Default (top) --&gt;
+&lt;span class=&quot;tooltip&quot; title=&quot;This is a default (top) tooltip&quot;&gt;.tooltip&lt;/span&gt;
+
+&lt;!-- Tooltip Top --&gt;
+&lt;span class=&quot;tooltip-top&quot; title=&quot;This is a Top tooltip&quot;&gt;.tooltip-top&lt;/span&gt;
+
+&lt;!-- Tooltip Right --&gt;
+&lt;span class=&quot;tooltip-right&quot; title=&quot;This is a Right tooltip&quot;&gt;.tooltip-right&lt;/span&gt;
+
+&lt;!-- Tooltip Left --&gt;
+&lt;span class=&quot;tooltip-left&quot; title=&quot;This is a Left tooltip&quot;&gt;.tooltip-left&lt;/span&gt;
+
+&lt;!-- Tooltip Bottom --&gt;
+&lt;span class=&quot;tooltip-bottom&quot; title=&quot;This is a Bottom tooltip&quot;&gt;.tooltip-bottom&lt;/span&gt;
+</pre>
+	</div>
+	
+	<div id="tooltip-html" class="tab-content">
+<pre>
+&lt;!-- Hover Action --&gt;
+&lt;button class=&quot;tooltip medium orange pill&quot; data-content=&quot;#tooltipcontentID&quot;&gt;Hover Over Me&lt;/button&gt;
+
+&lt;!-- Click Action --&gt;
+&lt;button class=&quot;tooltip medium blue pill&quot; data-content=&quot;#tooltipcontentID&quot; data-action=&quot;click&quot;&gt;Click Me&lt;/button&gt;
+
+&lt;!-- Tooltip Content --&gt;
+&lt;div class=&quot;tooltip-content&quot; id=&quot;tooltipcontentID&quot;&gt;&lt;h5&gt;HTML Content&lt;/h5&gt;
+&lt;img src=&quot;http://placehold.it/180x150/4D99E0/ffffff.png&amp;text=180x150&quot; width=&quot;180&quot; height=&quot;150&quot; /&gt;
+&lt;p&gt;This is more HTML content. You can place any HTML in this tooltip.&lt;/p&gt;&lt;/div&gt;
+</pre>
 	</div>
 	
 <!-- ===================================== 
@@ -1005,6 +1066,8 @@ $(document).ready(function(){
 <li><a href="#btn-sizes">Button Sizes</a></li>
 <li><a href="#btn-icons">Buttons w/Icons</a></li>
 <li><a href="#btn-colors">Button Colors</a></li>
+<li><a href="#btn-styles">Button Styles</a></li>
+<li><a href="#btn-bar">Button Bar</a></li>
 </ul>
 	
 	<style type="text/css">
@@ -1108,6 +1171,37 @@ $(document).ready(function(){
 &lt;button class=&quot;small&quot; disabled=&quot;disabled&quot;&gt;Small (disabled)&lt;/button&gt;
 &lt;button class=&quot;medium green&quot;&gt;.green&lt;/button&gt;
 &lt;button class=&quot;large red&quot;&gt;.red&lt;/button&gt;</pre>
+	</div>
+	
+	<div id="btn-styles" class="tab-content">
+<pre>
+&lt;!-- Default (no style) --&gt;
+&lt;button&gt;default&lt;/button&gt;
+
+&lt;!-- Pill --&gt;
+&lt;button class=&quot;pill&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;f&quot;&gt;&lt;/span&gt;.pill&lt;/button&gt;
+
+&lt;!-- Pop --&gt;
+&lt;a class=&quot;button pop&quot; href=&quot;&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;3&quot;&gt;&lt;/span&gt;.pop&lt;/a&gt;
+
+&lt;!-- Inset --&gt;
+&lt;button class=&quot;inset&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;p&quot;&gt;&lt;/span&gt;.inset&lt;/button&gt;
+
+&lt;!-- Square --&gt;
+&lt;button class=&quot;square&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;M&quot;&gt;&lt;/span&gt;.square&lt;/button&gt;
+</pre>
+	</div>
+	
+	<div id="btn-bar" class="tab-content">
+<pre>
+&lt;!-- Button Bar w/icons --&gt;
+&lt;ul class=&quot;button-bar&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;7&quot;&gt;&lt;/span&gt; Edit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;B&quot;&gt;&lt;/span&gt; Tag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;)&quot;&gt;&lt;/span&gt; Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;icon&quot; data-icon=&quot;p&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
 	</div>
 
 <!-- ===================================== 
@@ -1553,6 +1647,61 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 &lt;/ul&gt;</pre>
 	</div>
 
+
+<!-- ===================================== 
+	MEDIA
+===================================== -->
+<h3 id="media">Media</h3>
+<ul class="tabs">
+<li><a href="#media-example">Example</a></li>
+<li><a href="#media-videoplaceholder">Video Placeholder</a></li>
+<li><a href="#media-mapplaceholder">Map Placeholder</a></li>
+<li><a href="#media-calendar">Calendar</a></li>
+</ul>
+
+	<div id="media-example" class="tab-content">
+	<div class="col_4">
+	<h4>Video Placeholder</h4>
+	<a class="video-placeholder" href="http://youtu.be/lfnAb11wKQc"><img src="http://placehold.it/250x200/222222/999999.png" width="250" height="200" /></a>
+	</div>
+	
+	<div class="col_4">
+	<h4>Map Placholder</h4>
+	<iframe class="map-placeholder" width="100%" height="200" src="http://maps.google.com/maps?f=q&amp;t=m&amp;z=5&amp;output=embed" frameborder="0"></iframe>
+	</div>
+	
+	<div class="col_4">
+	<h4>Calendar</h4>
+	<div class="calendar" data-month="2" data-year="2012"></div>
+	</div>
+	</div>
+	
+	<div id="media-videoplaceholder" class="tab-content">
+<pre>
+&lt;!-- Video Placeholder --&gt;
+&lt;a class=&quot;video-placeholder&quot; href=&quot;http://youtu.be/lfnAb11wKQc&quot;&gt;&lt;img src=&quot;http://placehold.it/250x200/222222/999999.png&quot; width=&quot;250&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;
+</pre>
+	</div>
+	
+	<div id="media-mapplaceholder" class="tab-content">
+<pre>
+&lt;!-- Map Placeholder --&gt;
+&lt;iframe class=&quot;map-placeholder&quot; width=&quot;100%&quot; height=&quot;200&quot; src=&quot;http://maps.google.com/maps?f=q&amp;t=m&amp;z=5&amp;output=embed&quot;  frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+</pre>
+	</div>
+
+	<div id="media-calendar" class="tab-content">
+<pre>
+&lt;!-- Calendar --&gt;
+&lt;div class=&quot;calendar&quot; data-month=&quot;2&quot; data-year=&quot;2012&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Set Calendar Month --&gt;
+data-month=&quot;2&quot;
+
+&lt;!-- Set Calendar Year --&gt;
+data-year=&quot;2012&quot;
+</pre>
+	</div>
 <!-- ===================================== 
 	FORMS 
 ===================================== -->
@@ -1657,7 +1806,7 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<option value="1">Option 1</option>
 	<option value="2">Option 2</option>
 	<option value="3">Option 3</option>
-	</select>
+	</select>&nbsp;
 	
 	<button type="button" class="small green">Button</button>
 	<input type="checkbox" name="check23" id="check23" /> <label for="check23">Checkbox Label</label>
@@ -1666,7 +1815,7 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<hr />
 	
 	<style type="text/css">
-	#form-sizes label{border:1px dotted #ccc;}
+	#form-sizes label{border:1px dotted #ccc;*border:0;*background:#efefef;}
 	</style>
 	
 	<div id="form-sizes" class="col_12">

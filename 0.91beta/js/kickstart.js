@@ -115,12 +115,27 @@ $(document).ready(function(){
 	/*---------------------------------
 		HTML5 Placeholder Support
 	-----------------------------------*/
-	$('input, textarea').placeholder();
+	$('input[placeholder], textarea[placeholder]').placeholder();
 	
 	/*---------------------------------
 		SELECT MENUS - CHOSEN
 	-----------------------------------*/
 	$('select.fancy').chosen();
+	
+	/*---------------------------------
+		MEDIA
+	-----------------------------------*/
+	// video placeholder
+	$('a.video-placeholder').each(function(){
+		$(this).append('<span class="icon x-large white" data-icon="&nbsp;"></span>');
+	});
+	
+	// calendar
+	$('.calendar').each(function(){
+		if($(this).attr('data-month')) { cMonth = $(this).attr('data-month'); }
+		if($(this).attr('data-year')) { cYear = $(this).attr('data-year'); }
+		$(this).calendarWidget({month:cMonth, year: cYear});
+	});
 	
 	/*---------------------------------
 		Fancybox Lightbox
@@ -414,3 +429,11 @@ easingOut:"swing",showCloseButton:true,showNavArrows:true,enableEscapeButton:tru
 
 /* TINY SORT */
 (function(e){var a=false,g=null,f=parseFloat,b=/(\d+\.?\d*)$/g;e.tinysort={id:"TinySort",version:"1.2.18",copyright:"Copyright (c) 2008-2012 Ron Valstar",uri:"http://tinysort.sjeiti.com/",licenced:{MIT:"http://www.opensource.org/licenses/mit-license.php",GPL:"http://www.gnu.org/licenses/gpl.html"},defaults:{order:"asc",attr:g,data:g,useVal:a,place:"start",returns:a,cases:a,forceStrings:a,sortFunction:g}};e.fn.extend({tinysort:function(m,h){if(m&&typeof(m)!="string"){h=m;m=g}var n=e.extend({},e.tinysort.defaults,h),s,B=this,x=e(this).length,C={},p=!(!m||m==""),q=!(n.attr===g||n.attr==""),w=n.data!==g,j=p&&m[0]==":",k=j?B.filter(m):B,r=n.sortFunction,v=n.order=="asc"?1:-1,l=[];if(!r){r=n.order=="rand"?function(){return Math.random()<0.5?1:-1}:function(F,E){var i=!n.cases?d(F.s):F.s,K=!n.cases?d(E.s):E.s;if(!n.forceStrings){var H=i.match(b),G=K.match(b);if(H&&G){var J=i.substr(0,i.length-H[0].length),I=K.substr(0,K.length-G[0].length);if(J==I){i=f(H[0]);K=f(G[0])}}}return v*(i<K?-1:(i>K?1:0))}}B.each(function(G,H){var I=e(H),E=p?(j?k.filter(H):I.find(m)):I,J=w?E.data(n.data):(q?E.attr(n.attr):(n.useVal?E.val():E.text())),F=I.parent();if(!C[F]){C[F]={s:[],n:[]}}if(E.length>0){C[F].s.push({s:J,e:I,n:G})}else{C[F].n.push({e:I,n:G})}});for(s in C){C[s].s.sort(r)}for(s in C){var y=C[s],A=[],D=x,u=[0,0],z;switch(n.place){case"first":e.each(y.s,function(E,F){D=Math.min(D,F.n)});break;case"org":e.each(y.s,function(E,F){A.push(F.n)});break;case"end":D=y.n.length;break;default:D=0}for(z=0;z<x;z++){var o=c(A,z)?!a:z>=D&&z<D+y.s.length,t=(o?y.s:y.n)[u[o?0:1]].e;t.parent().append(t);if(o||!n.returns){l.push(t.get(0))}u[o?0:1]++}}return B.pushStack(l)}});function d(h){return h&&h.toLowerCase?h.toLowerCase():h}function c(j,m){for(var k=0,h=j.length;k<h;k++){if(j[k]==m){return !a}}return a}e.fn.TinySort=e.fn.Tinysort=e.fn.tsort=e.fn.tinysort})(jQuery);
+
+/*
+	jQuery Calendar
+	http://eisabainyo.net/demo/jquery.calendar-widget.php
+*/
+(function(g){function f(a,b){var c=[31,28,31,30,31,30,31,31,30,31,30,31];return 1==a&&0==b%4&&(0!=b%100||0==b%400)?29:c[a]}g.fn.calendarWidget=function(a){var b=new Date,c=b.getMonth(),b=b.getYear()+1900,c={month:c,year:b};g.extend(c,a);var e="Sun,Mon,Tue,Wed,Thu,Fri,Sat".split(",");month=b=parseInt(c.month);year=parseInt(c.year);a=""+('<h4 id="current-month">'+"January,February,March,April,May,June,July,August,September,October,November,December".split(",")[month]+" "+
+year+"</h4>");a=a+('<table class="calendar-month " id="calendar-month'+b+' " cellspacing="0">')+"<tr>";for(d=0;7>d;d++)a+='<th class="weekday">'+e[d]+"</th>";a+="</tr>";f(month,year);b=new Date(year,month,1);c=b.getDay();e=f(month,year);b=new Date(year,month,1);c=b.getDay();e=0==month?11:month-1;e=f(e,11==e?year-1:year);c=0==c&&b?7:c;for(j=b=0;42>j;j++)j<c?a+='<td class="other-month"><span class="day">'+(e-c+j+1)+"</span></td>":j>=c+f(month,year)?(b+=1,a+='<td class="other-month"><span class="day">'+
+b+"</span></td>"):a+='<td class="current-month day'+(j-c+1)+'"><span class="day">'+(j-c+1)+"</span></td>",6==j%7&&(a+="</tr>");this.html(a+"</table>");return this}})(jQuery);

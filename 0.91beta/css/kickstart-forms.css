@@ -42,9 +42,11 @@ display:inline-block;
 *display:inline;
 vertical-align: middle;
 margin:0;
+padding:0;
 position:relative;
 top:0;
 left:0;
+zoom:1;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
 -ms-box-sizing: border-box;
@@ -79,6 +81,7 @@ display:inline-block;
 *display:inline;
 vertical-align: middle;
 width:auto;
+zoom:1;
 margin:0;
 border:1px solid #ccc;
 font-size:1em;
@@ -224,7 +227,9 @@ input.col_8,
 input.col_9,
 input.col_10,
 input.col_11,
-input.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;}
+input.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;
+*margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
+}
 
 label.col_1,
 label.col_2,
@@ -237,7 +242,9 @@ label.col_8,
 label.col_9,
 label.col_10,
 label.col_11,
-label.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;}
+label.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;
+*margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
+}
 
 /*---------------------------------
 	FORMS VERTICAL

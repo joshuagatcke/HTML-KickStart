@@ -27,7 +27,6 @@ src: url('fonts/social/icomoonsocial-webfont.eot?#iefix') format('embedded-opent
 .icon{
 height:0.8em;
 width:0.8em;
-overflow:hidden;
 display:inline-block;
 font-size:21px;
 color:inherit;

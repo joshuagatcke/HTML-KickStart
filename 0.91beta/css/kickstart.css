@@ -312,6 +312,7 @@ font-size:0;
 	display:inline-block;
 	*display:inline; /* IE ONLY*/
 	position:relative;
+	zoom:1;
 	line-height:100%;
 	font-size:14px; /* 0.8em default to override font-size:0; on parent*/
 	}
@@ -320,9 +321,9 @@ font-size:0;
 	display:inline-block;
 	*display:inline; /* IE ONLY*/
 	position:relative;
-	float:left;
 	padding:5px 15px 5px 5px;
 	font-size:0.9em;
+	zoom:1;
 	margin:0;
 	background:url(img/icon-arrow-right.png) no-repeat right center;
 	}
@@ -340,21 +341,30 @@ font-size:0;
 	
 	/* Alternative Style */
 	ul.breadcrumbs.alt1{
-	border:1px solid #efefef;
+	border:1px solid transparent;
+	font-size:0;
 	}
 	
 	ul.breadcrumbs.alt1 li a{
 	padding:10px 25px 10px 15px;
 	background:url(img/breadcrumbs-bg.gif) no-repeat right center;
 	text-decoration:none;
+	border-top:1px solid #efefef;
+	border-bottom:1px solid #efefef;
+	font-size:12px;
 	}
 	
 	ul.breadcrumbs.alt1 a:hover{
 	text-decoration:underline;
 	}
 	
+	ul.breadcrumbs.alt1 li.first a{
+	border-left:1px solid #efefef;
+	}
+	
 	ul.breadcrumbs.alt1 li.last a{
 	background:none;
+	border-right:1px solid #efefef;
 	}
 	
 /*---------------------------------
@@ -540,6 +550,56 @@ clear:both;
 		font-size:0.8em;
 		}
 
+/*---------------------------------
+	MEDIA
+-----------------------------------*/
+.video-placeholder,
+.video-placeholder a{
+position:relative;
+top:0;
+left:0;
+display:inline-block;
+*display:inline;
+zoom:1;
+margin:0;
+padding:0;
+text-decoration:none;
+}
+	.video-placeholder img{vertical-align: bottom;}
+	.video-placeholder .icon{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-24px 0 0 -24px;
+	}
+	
+	.video-placeholder:hover .icon{
+	text-shadow:0px 0px 10px rgba(255,255,255,0.8), 0px 2px 2px rgba(0,0,0,1);
+	cursor: pointer;
+	}
+	
+iframe.map-placeholder{
+border:1px solid #ccc;
+margin:0;
+padding:0;
+overflow: hidden;
+box-sizing: border-box;
+}
+	
+.calendar{
+text-align:center;
+text-shadow:0px 1px 0px #fff;
+color:#666;
+border:1px solid #ddd;
+background:#f5f5f5;
+}
+	.calendar h4#current-month{font-size:1em;margin:0;padding:2% 0;border-top:1px solid #fff;line-height:100%;font-weight:normal;}
+	.calendar table{margin:0;border-collapse: collapse;border:0;}
+	.calendar th, .calendar td{text-align:center;padding:0;font-weight: normal;line-height:100%;border:0;}
+	.calendar th{width:14.2857%;padding:2% 0;border-bottom:1px solid #ddd;}
+	.calendar td{background:#fff;padding:3% 0;}
+	.calendar th.weekday{color:#999;font-size:0.7em;text-transform: uppercase;}
+	.calendar td.other-month{color:#ccc;}
+	.calendar td.current-month{background:#fff;color:#777;}
 
-	
-	
+
