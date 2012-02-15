@@ -122,7 +122,8 @@ box-sizing: border-box;
 	button:focus,
 	a.button:focus,
 	select:focus,
-	input[type="file"]:focus{
+	input[type="file"]:focus,
+	input[type="password"]:focus{
 	-webkit-box-shadow: 0 0 7px #6DB9FF;
 	-moz-box-shadow   : 0 0 7px #6DB9FF;
 	-o-box-shadow     : 0 0 7px #6DB9FF;
