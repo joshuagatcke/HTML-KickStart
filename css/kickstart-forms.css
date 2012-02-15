@@ -303,15 +303,16 @@ left:0;
 	.rte-toolbar li a:hover{color:#333;background-color:#efefef;}
 	
 	/* show/hide tools */
-	.rte-wrap li{display:none;}
-	.rte-wrap.editmode li{display:block;}
-	.rte-wrap li.html-toggle,
-	.rte-wrap.editmode li.html-toggle{display:block;}
+	.rte-wrap .rte-toolbar li{display:none;}
+	.rte-wrap.editmode .rte-toolbar li{display:block;}
+	.rte-wrap .rte-toolbar li.html-toggle,
+	.rte-wrap.editmode .rte-toolbar li.html-toggle{display:block;}
 
 	.rte-toolbar select.inline{
 	float:left;
 	display:inline;
 	width:50px;
+	height:15px;
 	margin:1px 3px 0 1px;
 	}
 
@@ -321,7 +322,7 @@ width:100%;
 margin:0;
 border:1px solid #ccc;
 padding:5px;
-overflow:scroll;
+overflow:auto;
 vertical-align: middle;
 font-family:inherit;
 font-size:0.9em;
@@ -346,6 +347,16 @@ box-shadow:inset 0px 1px 6px #ccc;
 -ms-box-sizing: border-box;
 box-sizing: border-box;
 z-index:40;
+}
+
+textarea.rte{
+font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+font-size:0.9em;
+}
+
+.rte-editor ul li,
+.rte-editor ol li{
+padding:0;
 }
 
 /*---------------------------------
