@@ -312,8 +312,9 @@ left:0;
 	float:left;
 	display:inline;
 	width:50px;
-	height:15px;
+	height:17px;
 	margin:1px 3px 0 1px;
+	bordeR:1px solid #ccc;
 	}
 
 textarea.rte,

@@ -328,7 +328,7 @@ $(document).ready(function(){
 		
 		// tooltip
 		$(this).attr('title','')
-		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action});
+		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action, delay: 1000});
 	});
 	
 	/*---------------------------------
