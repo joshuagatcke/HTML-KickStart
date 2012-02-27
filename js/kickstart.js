@@ -304,7 +304,13 @@ $(document).ready(function(){
 	$('ul').find('li:first-child').addClass('first');
 	$('ul').find('li:last-child').addClass('last');
 	$('hr').before('<div class="clear">&nbsp;</div>');
-	$('[class*=col_]').not('input, label').addClass('column').wrapInner('<div class="inner">');
+	$('[class*=col_]').not('input, label').addClass('column').each(
+	    function (i,o){
+	      var div = document.createElement('div'); div.className="inner";
+	      while (o.firstChild) div.appendChild(o.firstChild);
+	      o.appendChild(div);
+	    }
+	  );
 	$('pre').addClass('prettyprint');prettyPrint();
 	
 });
