@@ -123,13 +123,9 @@ box-sizing: border-box;
 	a.button:focus,
 	select:focus,
 	input[type="file"]:focus,
-<<<<<<< HEAD:css/kickstart-forms.css
-	input[type="password"]:focus{
-=======
 	input[type="password"]:focus,
 	.rte-editor:focus,
 	textarea.rte:focus{
->>>>>>> dev:css/kickstart-forms.css
 	-webkit-box-shadow: 0 0 7px #6DB9FF;
 	-moz-box-shadow   : 0 0 7px #6DB9FF;
 	-o-box-shadow     : 0 0 7px #6DB9FF;

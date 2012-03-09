@@ -391,13 +391,8 @@ jQuery(document).ready(function($){
 	      var div = document.createElement('div'); div.className="inner";
 	      while (o.firstChild) div.appendChild(o.firstChild);
 	      o.appendChild(div);
-<<<<<<< HEAD
 	    }
 	  );
-=======
-		}
-	);
->>>>>>> RTE first pass, general updates.
 	$('pre').addClass('prettyprint');prettyPrint();
 	
 });
