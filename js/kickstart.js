@@ -3,7 +3,7 @@
 	kickstart.js
 */
 
-$(document).ready(function(){
+jQuery(document).ready(function($){
 
 	/*---------------------------------
 		MENU Dropdowns
