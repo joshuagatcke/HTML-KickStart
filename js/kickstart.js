@@ -368,7 +368,7 @@ jQuery(document).ready(function($){
 		Icons
 	-----------------------------------*/
 	$('.icon').each(function(){
-		$(this).append('<span aria-hidden="true">'+$(this).attr('data-icon')+'</span>')
+		$(this).html('<span aria-hidden="true">'+$(this).attr('data-icon')+'</span>')
 		.css('display', 'inline-block');
 	});
 	
@@ -391,8 +391,8 @@ jQuery(document).ready(function($){
 	      var div = document.createElement('div'); div.className="inner";
 	      while (o.firstChild) div.appendChild(o.firstChild);
 	      o.appendChild(div);
-	    }
-	  );
+		}
+	);
 	$('pre').addClass('prettyprint');prettyPrint();
 	
 });
