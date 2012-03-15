@@ -226,7 +226,6 @@ background:0;
 	border-bottom-right-radius: 5px;
 	-moz-background-clip:content-box;
 	-webkit-background-clip: border;
-	background-clip: content-box;
 	}
 	
 	ul.button-bar li a .icon{

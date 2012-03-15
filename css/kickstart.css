@@ -385,8 +385,8 @@ position:relative;
 zoom:1;
 }
 
-	img.align-left{float:left;margin:0 10px 5px 0;}
-	img.align-right{float:right;margin:0 0 5px 10px;}
+	img.align-left, .img-wrap.align-left{float:left;margin:0 10px 5px 0;}
+	img.align-right, .img-wrap.align-right{float:right;margin:0 0 5px 10px;}
 	img.full-width{clear:both;display:block;width:100%;height:auto;margin:0 0 10px 0;}
 
 	span.img-wrap{
