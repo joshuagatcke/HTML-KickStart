@@ -42,6 +42,27 @@ em,i{}
 .left{text-align:left;}
 .right{text-align:right;}
 
+/* IE BOX MODEL - BECAUSE FOR ONCE MICROSOFT GOT IT RIGHT - http://www.jefftk.com/news/2012-02-18.html - comment to remove */
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; } 
+
+/* CLEAR FLOAT - ADD cf to your classes to clear float - For modern browsers http://nicolasgallagher.com/micro-clearfix-hack/  */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* Clear float - For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+    
 /*---------------------------------
 	HR
 -----------------------------------*/
