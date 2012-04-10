@@ -42,12 +42,13 @@ em,i{}
 .left{text-align:left;}
 .right{text-align:right;}
 
-/* IE BOX MODEL - BECAUSE FOR ONCE MICROSOFT GOT IT RIGHT - http://www.jefftk.com/news/2012-02-18.html - comment to remove */
+/* IE BOX MODEL - BECAUSE FOR ONCE MICROSOFT GOT IT RIGHT - http://www.jefftk.com/news/2012-02-18.html
+   UNCOMMENT TO REMOVE
 * { -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; } 
+    box-sizing: border-box; } */
 
-/* CLEAR FLOAT - ADD cf to your classes to clear float - For modern browsers http://nicolasgallagher.com/micro-clearfix-hack/  */
+/* MICRO CLEARFIX HACK - ADD "cf" to your classes to clear floats - For modern browsers http://nicolasgallagher.com/micro-clearfix-hack/  */
 .cf:before,
 .cf:after {
     content:"";
