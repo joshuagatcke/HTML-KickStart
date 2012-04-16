@@ -261,6 +261,31 @@ jQuery(document).ready(function($){
 		return false;
 	});
 	
+	// Internal linking to tabs
+	// With adding class .internal to a link you can focus a tab without clicking the actual li a element.
+	$('a.internal[href^="#"]').on('click', function(e){
+		var tabs = $('ul.tabs').find('li');
+		var tab_next = $(this).attr('href');
+		var tab_current = tabs.filter('.current').find('a').attr('href');
+		$(tab_current).hide();
+		tabs.removeClass('current');
+		$('a[href="'+tab_next+'"]').parent().addClass('current');
+		$(tab_next).show();
+		return false;
+		
+	});
+		
+	//  This automatically links a url with a #hash to the corresponding tab.
+	if(document.location.hash.length) {
+		var tabs = $('ul.tabs').find('li');
+		var tab_next = document.location.hash;
+		var tab_current = tabs.filter('.current').find('a').attr('href');
+		$(tab_current).hide();
+		tabs.removeClass('current');
+		$('a[href="'+tab_next+'"]').parent().addClass('current');
+		$(tab_next).show();
+	}
+	
 	/*---------------------------------
 		Image Style Helpers
 	-----------------------------------*/
