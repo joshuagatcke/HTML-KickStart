@@ -53,7 +53,6 @@ position:relative;z-index:1000;}
 -----------------------------------*/
 .menu{
 border:1px solid #ccc;
-text-shadow:0px 1px 1px #fff;
 background: #eee; /* Old browsers */
 background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(224,224,224,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(224,224,224,1))); /* Chrome,Safari4+ */
@@ -67,6 +66,7 @@ z-index:600;
 	.menu li{}
 	
 		.menu li a{
+		text-shadow:0px 1px 1px #fff;
 		padding:15px 20px;
 		text-decoration:none;
 		font-size:0.9em;
