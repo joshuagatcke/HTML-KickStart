@@ -110,7 +110,6 @@
   font-size: 1em;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  -ms-box-sizing: content-box;
   box-sizing:content-box;
 }
 .chzn-container-single .chzn-drop {

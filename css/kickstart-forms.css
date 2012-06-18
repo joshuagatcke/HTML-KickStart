@@ -49,7 +49,6 @@ left:0;
 zoom:1;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
--ms-box-sizing: border-box;
 box-sizing: border-box;
 }
 
@@ -96,7 +95,6 @@ background:#fff;
 box-shadow:inset 0px 1px 6px #ccc;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
--ms-box-sizing: border-box;
 box-sizing: border-box;
 }
 
@@ -212,7 +210,6 @@ border-radius:5px;
 box-shadow:inset 0px 1px 6px #ccc;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
--ms-box-sizing: border-box;
 box-sizing: border-box;
 }
 
@@ -343,7 +340,6 @@ border-bottom-right-radius: 5px;
 box-shadow:inset 0px 1px 6px #ccc;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
--ms-box-sizing: border-box;
 box-sizing: border-box;
 z-index:40;
 }
