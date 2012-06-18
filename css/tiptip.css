@@ -18,12 +18,12 @@ border: 1px solid rgba(255,255,255,0.25);
 background:#212121;
 background-color: rgba(25,25,25,0.92);
 background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(#000));
-border-radius: 3px;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
-box-shadow: 0 0 3px #555;
+border-radius: 3px;
 -webkit-box-shadow: 0 0 3px #555;
 -moz-box-shadow: 0 0 3px #555;
+box-shadow: 0 0 3px #555;
 *background:#212121;
 }
 

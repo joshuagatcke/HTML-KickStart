@@ -138,10 +138,10 @@ box-sizing: border-box;
 	a.button,
 	a,
 	input[type="file"]{
-	transition: box-shadow 0.5s, border 0.5s, background 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s, border 0.5s, background 0.5s;
 	-webkit-transition: -webkit-box-shadow 0.5s, border 0.5s, background 0.5s;
 	-o-transition:  box-shadow 0.5s, border 0.5s, background 0.5s;
+	transition: box-shadow 0.5s, border 0.5s, background 0.5s;
 	}
 
 input.checkbox,
