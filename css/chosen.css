@@ -16,7 +16,6 @@
   left: 0;
   -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
   -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
-  -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
   box-shadow        : 0 4px 5px rgba(0,0,0,.15);
   z-index: 999;
 }
@@ -171,7 +170,6 @@
   outline: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow   : none;
-  -o-box-shadow     : none;
   box-shadow        : none;
 }
 .chzn-container-multi .chzn-choices .search-field .default {
@@ -310,7 +308,6 @@
 .chzn-container-active .chzn-single {
   -webkit-box-shadow: 0 0 5px #6DB9FF;
   -moz-box-shadow   : 0 0 5px #6DB9FF;
-  -o-box-shadow     : 0 0 5px #6DB9FF;
   box-shadow        : 0 0 5px #6DB9FF;
   border: 1px solid #50B1FE;
 }
@@ -318,7 +315,6 @@
   border: 1px solid #aaa;
   -webkit-box-shadow: 0 1px 0 #fff inset;
   -moz-box-shadow   : 0 1px 0 #fff inset;
-  -o-box-shadow     : 0 1px 0 #fff inset;
   box-shadow        : 0 1px 0 #fff inset;
   background-color: #eee;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0 );
@@ -345,7 +341,6 @@
 .chzn-container-active .chzn-choices {
   -webkit-box-shadow: 0 0 5px #6DB9FF;
   -moz-box-shadow   : 0 0 5px #6DB9FF;
-  -o-box-shadow     : 0 0 5px #6DB9FF;
   box-shadow        : 0 0 5px #6DB9FF;
   border: 1px solid #50B1FE;
 }

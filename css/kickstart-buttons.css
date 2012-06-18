@@ -255,7 +255,7 @@ background:0;
 .pill{border-radius:200em;}
 .pop{box-shadow:0px 1px 5px rgba(0,0,0,0.2);}
 .inset{box-shadow:inset 0px 1px 3px rgba(0,0,0,0.3);}
-.square{-moz-border-radius:0;-webkit-border-radius:0;-o-border-radius:0;border-radius:0;}
+.square{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
 
 /*---------------------------------
 	ORANGE

@@ -128,7 +128,6 @@ box-sizing: border-box;
 	textarea.rte:focus{
 	-webkit-box-shadow: 0 0 7px #6DB9FF;
 	-moz-box-shadow   : 0 0 7px #6DB9FF;
-	-o-box-shadow     : 0 0 7px #6DB9FF;
 	box-shadow        : 0 0 7px #6DB9FF;
 	border: 1px solid #50B1FE;
 	outline: none;
@@ -144,7 +143,7 @@ box-sizing: border-box;
 	transition: box-shadow 0.5s, border 0.5s, background 0.5s;
 	-moz-transition: -moz-box-shadow 0.5s, border 0.5s, background 0.5s;
 	-webkit-transition: -webkit-box-shadow 0.5s, border 0.5s, background 0.5s;
-	-o-transition:  -o-box-shadow 0.5s, border 0.5s, background 0.5s;
+	-o-transition:  box-shadow 0.5s, border 0.5s, background 0.5s;
 	}
 
 input.checkbox,
@@ -175,7 +174,6 @@ vertical-align:center;
 	input[ type="checkbox"]:focus{
 	-webkit-box-shadow: 0 0 5px #6DB9FF;
 	-moz-box-shadow   : 0 0 5px #6DB9FF;
-	-o-box-shadow     : 0 0 5px #6DB9FF;
 	box-shadow        : 0 0 5px #6DB9FF;
 	outline-color: #6DB9FF;
 	}
