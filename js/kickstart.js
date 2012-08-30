@@ -261,6 +261,18 @@ jQuery(document).ready(function($){
 		return false;
 	});
 	
+ 	// tab hashtag identification and auto-focus
+    	var wantedTag = window.location.hash;
+    	if (wantedTag != "")
+    	{
+        	var allTabs = $("ul.tabs a[href^=" + wantedTag + "]").parents('ul.tabs').find('li');
+        	var defaultTab = allTabs.filter('.current').find('a').attr('href');
+        	$(defaultTab).hide();
+        	allTabs.removeClass('current');
+        	$("ul.tabs a[href^=" + wantedTag + "]").parent().addClass('current');
+        	$("#" + wantedTag.replace('#','')).show();
+    	}
+	
 	/*---------------------------------
 		Image Style Helpers
 	-----------------------------------*/
