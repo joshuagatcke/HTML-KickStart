@@ -258,6 +258,7 @@ jQuery(document).ready(function($){
 		tabs.removeClass('current');
 		$(this).parent().addClass('current');
 		$(tab_next).show();
+		history.pushState( null, null, window.location.search + $(this).attr('href') );
 		return false;
 	});
 	
