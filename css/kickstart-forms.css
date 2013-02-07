@@ -182,10 +182,11 @@ vertical-align:center;
 
 input.file,
 input[type="file"]{
-font-size:0.8em;
+/*font-size:0.8em;*/
 -moz-box-shadow:none;
 -webkit-box-shadow:none;
 box-shadow:none;
+border:none;
 }
 
 select{
@@ -268,8 +269,8 @@ left:0;
 	border:1px solid #ddd;
 	border-bottom:1px solid #ccc;
 	width:auto;
-	height:10px;
 	padding:2px;
+	line-height:100%;
 	}
 	
 	.rte-toolbar li a{
@@ -322,6 +323,7 @@ textarea.rte,
 width:100%;
 margin:0;
 border:1px solid #ccc;
+background:#fff;
 padding:5px;
 overflow:auto;
 vertical-align: middle;
@@ -333,7 +335,6 @@ font-size:0.9em;
 -webkit-border-top-right-radius:0px;
 border-top-left-radius:0px;
 border-top-right-radius:0px;
-
 -moz-border-radius-bottomleft:5px;
 -moz-border-radius-bottomright:5px;
 -webkit-border-bottom-left-radius: 5px;
@@ -365,33 +366,13 @@ padding:0;
 -----------------------------------*/
 
 /* sizes */
-input.col_1,
-input.col_2,
-input.col_3,
-input.col_4,
-input.col_5,
-input.col_6,
-input.col_7,
-input.col_8,
-input.col_9,
-input.col_10,
-input.col_11,
-input.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;
+input[class*="col_"]{
+float:none;display:inline-block;*display:inline;margin-bottom:0;
 *margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
 }
 
-label.col_1,
-label.col_2,
-label.col_3,
-label.col_4,
-label.col_5,
-label.col_6,
-label.col_7,
-label.col_8,
-label.col_9,
-label.col_10,
-label.col_11,
-label.col_12{float:none;display:inline-block;*display:inline;margin-bottom:0;
+label[class*="col_"]{
+float:none;display:inline-block;*display:inline;margin-bottom:0;
 *margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
 }
 

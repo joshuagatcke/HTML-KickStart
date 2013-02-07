@@ -118,7 +118,7 @@ input[type="button"]{*padding:7px 15px;}/*IE 7 ONLY*/
 	input[type="reset"] .icon,
 	input[type="button"] .icon{
 	vertical-align: middle;
-	margin:-5px 3px -7px -2px;
+	margin:-2px 3px -7px -2px;
 	*margin:-5px 3px -10px 0px;/*IE 7 ONLY*/
 	}
 	

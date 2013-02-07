@@ -14,9 +14,27 @@
  /*
  & Columns : 12 
  & Gutter %: 20% 
- & MinWidth: 960px
- & MaxWidth: 1080px
+ & MaxWidth: 1280px
  */
+ 
+.grid{
+max-width:1220px;
+margin:0 auto;
+padding:0 2%;
+}
+
+.grid.flex{
+width:100%;
+max-width:100%;
+padding:0 2%;
+}
+
+.row{
+display:block;
+overflow:hidden;
+clear:both;
+}
+ 
 .col_1  { width: 6.6666666666667%; }
 .col_2  { width: 15%; }
 .col_3  { width: 23.333333333333%; }
@@ -30,28 +48,19 @@
 .col_11 { width: 90%; }
 .col_12 { width: 98.333333333333%; }
 
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5,
-.col_6,
-.col_7,
-.col_8,
-.col_9,
-.col_10,
-.col_11,
-.col_12 {
+*[class*="col_"]{
 margin-left: 0.83333333333333%;
 margin-right: 0.83333333333333%;
-margin-top:8px;
-margin-bottom:8px;
+margin-top:0.5em;
+margin-bottom:0.5em;
 float: left;
 display: block;
 }
 
-.alpha{margin-left:0px;}
-.omega{margin-right:0px;}
+*[class*="col_"] img{
+max-width: 100%;
+height:auto;
+}
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 .clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
@@ -61,25 +70,93 @@ display: block;
 	To view your grids, add the class .visible to any grid container.
 	This will add a background color so you can see the layout of your grids. 
 */
-.col_1.visible,
-.col_2.visible,
-.col_3.visible,
-.col_4.visible,
-.col_5.visible,
-.col_6.visible,
-.col_7.visible,
-.col_8.visible,
-.col_9.visible,
-.col_10.visible,
-.col_11.visible,
-.col_12.visible {
+*[class*="col_"].visible{
 background:#efefef;
 }
 
-/* Default .inner Padding 
-	The inside of a column is automatically wrapped with div.inner by Javascript. 
-	This allows for more flexible styling and layout without breaking your columns.
-*/
-.column .inner{
-	padding:10px;
+
+/*---------------------------------
+	Responsive Grid Media Queries - 1280, 1024, 768, 480
+	1280-1024 	- desktop (default grid)
+	1024-768 	- tablet landscape
+	768-480 	- tablet 
+	480-less 	- phone landscape & smaller
+-----------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+	
+	.grid *[class*="col_"]{}
+	.grid{max-width: 1024px;}
+	.show-desktop	{display:block;}
+	.hide-desktop	{display:none;}
+	.show-tablet	{display:none;}
+	.hide-tablet	{display:block;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	
+	.grid *[class*="col_"]{}
+	.grid{max-width: 768px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+	.grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+	
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.grid{max-width: 480px;}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:block;}
+	.hide-tablet	{display:none;}
+	.show-phone		{display:none;}
+	.hide-phone		{display:block;}
+	
+}
+
+@media all and (max-width: 480px) {
+	
+	.grid *[class*="col_"]{
+	float:none;
+	width:auto;
+	clear:both;
+	display:block;
+	}
+	
+	/* columns inside of columns */
+	.grid *[class*="col_"] [class*="col_"]{
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	}
+	
+	.grid{max-width: 100%;/*320*/}
+	.show-desktop	{display:none;}
+	.hide-desktop	{display:block;}
+	.show-tablet	{display:none;}
+	.hide-tablet	{display:block;}
+	.show-phone		{display:block;}
+	.hide-phone		{display:none;}
+	
 }
