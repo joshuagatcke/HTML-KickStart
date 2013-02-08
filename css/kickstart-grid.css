@@ -57,7 +57,7 @@ float: left;
 display: block;
 }
 
-*[class*="col_"] img{
+.grid img{
 max-width: 100%;
 height:auto;
 }

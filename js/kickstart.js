@@ -285,6 +285,7 @@ jQuery(document).ready(function($){
 	$('ul').find('li:first-child').addClass('first');
 	$('ul').find('li:last-child').addClass('last');
 	$('hr').before('<div class="clear">&nbsp;</div>');
+	$('[class*="col_"]').addClass('column');
 	$('pre').addClass('prettyprint');prettyPrint();
 	
 });

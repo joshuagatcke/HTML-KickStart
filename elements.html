@@ -273,6 +273,7 @@ T4B&#8211;1S6
 </ul>
 
 	<div id="menu-example" class="tab-content">
+	<p>These Menus are optionallly responsive when using a responsive grid: <code>.grid</code> or <code>.grid.flex</code></p>
 	<!-- MENU VERTICAL -->
 	<div class="col_3">
 	<h4>Vertical Left</h4>
@@ -1375,6 +1376,23 @@ padding:10px;
 </ul>
 
 	<div id="grids-example" class="tab-content">
+	<h4>Responsive & Flexible Grid</h4>
+	<p>Responsive functionality is optional. Only use <code>.grid</code> & <code>.grid.flex</code> if you 
+	want a responsive grid. Resize your browser to see it in action.</p>
+	<div class="col_4"><p>Responsive Grid:<br /><code>&lt;div class=&quot;grid&quot;&gt;</code></p></div>
+	<div class="col_4"><p>Flexible Responsive Grid:<br /><code>&lt;div class=&quot;grid flex&quot;&gt;</code></p></div>
+	<div class="col_4"><p>Grid Helper Classes:<br />
+	<code>.show-desktop</code>
+	<code>.hide-desktop</code>
+	<code>.show-tablet</code>
+	<code>.hide-tablet</code>
+	<code>.show-phone</code>
+	<code>.hide-phone</code>
+	</p></div>
+	<div class="col_12">All columns automatically have the class <code>.column</code>. Apply padding and borders directly to columns 
+	<br /><code>.column{border:1px solid red;padding:10px;}</code> </div>
+	<div class="clear"></div>
+	
 	<div class="col_12 visible">col_12</div>
 	<div class="col_1 visible">col_1</div><div class="col_11 visible">col_11</div>
 	<div class="col_2 visible">col_2</div><div class="col_10 visible">col_10</div>
@@ -1570,8 +1588,9 @@ in hendrerit in vulputate velit esse molestie consequat.&lt;/p&gt;</pre>
 </ul>
 
 	<div id="slideshow-example" class="tab-content">
+	<p>Fully responsive slideshow. Touch enabled. Uses the awesome & highly configurable <a href="http://bxslider.com/">BXSlider</a>.</p>
 	<div class="col_8">
-	<ul class="slideshow" width="550" height="350">
+	<ul class="slideshow">
 	<li><img src="http://placehold.it/550x350/4D99E0/ffffff.png&text=550x350" width="550" height="350" /></li>
 	<li><img src="http://placehold.it/550x350/75CC00/ffffff.png&text=550x350" width="550" height="350" /></li>
 	<li><img src="http://placehold.it/550x350/E49800/ffffff.png&text=550x350" width="550" height="350" /></li>
@@ -1584,13 +1603,14 @@ in hendrerit in vulputate velit esse molestie consequat.&lt;/p&gt;</pre>
 	<h4>Features</h4>
 	<ul class="checks">
 	<li>Slide Any HTML Content</li>
+	<li>Responsive</li>
+	<li>Touch Enabled</li>
 	<li>Iframes</li>
 	<li>Videos</li>
 	<li>Images</li>
 	<li>Lightweight</li>
 	<li>Multiple Slideshows</li>
 	<li>Zero Setup Required</li>
-	<li>Flexible Markup</li>
 	<li>Unordered List (default)</li>
 	</ul>
 	</div>
@@ -1599,7 +1619,7 @@ in hendrerit in vulputate velit esse molestie consequat.&lt;/p&gt;</pre>
 	<div id="slideshow-html" class="tab-content">
 <pre>
 &lt;!-- Slideshow --&gt;
-&lt;ul class=&quot;slideshow&quot; width=&quot;550&quot; height=&quot;350&quot;&gt;
+&lt;ul class=&quot;slideshow&quot;&gt;
 &lt;li&gt;&lt;img src=&quot;http://placehold.it/550x350/4D99E0/ffffff.png&amp;text=550x350&quot; width=&quot;550&quot; height=&quot;350&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;img src=&quot;http://placehold.it/550x350/75CC00/ffffff.png&amp;text=550x350&quot; width=&quot;550&quot; height=&quot;350&quot; /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;img src=&quot;http://placehold.it/550x350/E49800/ffffff.png&text=550x350&quot; width=&quot;550&quot; height=&quot;350&quot; /&gt;&lt;/li&gt;
@@ -1838,9 +1858,6 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	</tr><tr>
 	<td><code>.clearfix</code></td>
 	<td>Add this class to containers that have floating children inside to clear inner floats.</td>
-	</tr><tr>
-	<td><code>a href="#anchor"</code></td>
-	<td>Automatically scrolls the page to the desired object with <code>id="anchor"</code>.</td>
 	</tr><tr>
 	<td><code>li.first</code> <code>li.last</code></td>
 	<td>First and Last <code>&lt;li&gt;&lt;/li&gt;</code> items automatically get classes <code>.first</code> and <code>.last</code> respectively.</td>
