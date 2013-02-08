@@ -408,7 +408,7 @@ input.error{border:1px solid red;}
 .notice{
 border:1px solid gold;
 background:lightyellow;
-padding:10px 20px 10px 10px;
+padding:10px 20px 10px 40px;
 margin:10px 0;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
@@ -426,7 +426,7 @@ clear:both;
 	.notice.warning{}/*default*/
 	.notice.error{border:1px solid red;background:pink;color:red;}
 	.notice.success{border:1px solid green;background:lightgreen;color:green;}
-	.notice .icon{color:inherit;margin-right:10px;margin-bottom:-5px;*margin-top:-5px;}
+	.notice .icon{position:absolute;top:50%;left:7px;margin-top:-0.4em;}
 	.notice a.icon.close,
 	.notice a.icon.close:active,
-	.notice a.icon.close:visited{font-size:12px;position:absolute;top:5px;right:-5px;left:auto;color:inherit;}
+	.notice a.icon.close:visited{font-size:12px;position:absolute;top:5px;right:5px;left:auto;color:inherit;margin-top:0;left:auto;}
