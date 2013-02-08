@@ -38,7 +38,7 @@ jQuery(document).ready(function($){
 		startSlide: 0,
 		infiniteLoop: true,
 		captions: true,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
 		touchEnabled: true,
 		pause: 4000,
 		autoControls: false,
