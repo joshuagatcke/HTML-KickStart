@@ -50,15 +50,15 @@ text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
 }
 
 #wrap{
-width:960px;/*960*/
+width:100%;
 background:#fff;
 margin:30px auto 30px auto;
-padding:0;
+padding:0 2%;
 border:1px solid #ccc;
 }
 
 .menu{
-margin:-1px -1px 0 -1px;
+margin:-1px -2.2% 0 -2.2%;
 }
 
 
@@ -77,18 +77,5 @@ left:0;
 }
 
 	#link-top{
-	position: absolute;
-	top:10px;
-	right:10px;
-	*right:25px;/*IE 7 ONLY*/
-	left:auto;
-	color:#666;
-	text-decoration:none;
-	display: inline-block;
-	padding:5px 10px;
-	background:#e5e5e5;
-	line-height:100%;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
+	display:none;
 	}

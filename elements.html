@@ -9,15 +9,15 @@
 <script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
 <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
-</head><body><a id="top-of-page"></a><div id="wrap" class="clearfix">
+</head><body><a id="top-of-page"></a>
 <!-- ===================================== END HEADER ===================================== -->
 
-
+<div class="grid">
 
 <!-- ===================================== 
 	TYPOGRAPHY 
 ===================================== -->
-<div class="col_12">
+
 <h3 id="typography">Typography</h3>
 <ul class="tabs">
 <li><a href="#type-example">Example</a></li>
@@ -775,7 +775,7 @@ $(document).ready(function(){
 });
 </script>
 <style type="text/css">
-#icons-instructions{border:1px solid lightblue;background:#f5f5f5;}
+#icons-instructions{border:1px solid lightblue;background:#f5f5f5;padding:20px;}
 #icons-instructions .inner{padding:20px;}
 #icons-instructions label,
 #icons-instructions select{display:inline;}
@@ -783,7 +783,7 @@ $(document).ready(function(){
 #icons-instructions pre{margin:0;background:#fff;}
 #icons-base .icon,
 #icons-social .icon{border:1px solid #ddd;background:#f5f5f5;box-shadow:inset 0px 0px 5px rgba(0,0,0,0.2);
--moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:10px;margin:5px;cursor:pointer;}
+-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:10px;margin:5px;cursor:pointer;box-sizing: content-box;}
 #icons-base .icon span{*top:-36%;/*IE 7 ONLY*/}
 #icons-base .icon.social span{*top:-16%;/*IE 7 ONLY*/}
 #icons-base .icon.white,
@@ -1060,6 +1060,10 @@ $(document).ready(function(){
 <!-- ===================================== 
 	BUTTONS 
 ===================================== -->
+<style type="text/css">
+#btn-example .button-bar{margin-bottom:10px;}
+</style>
+
 <h3 id="buttons">Buttons</h3>
 <ul class="tabs">
 <li><a href="#btn-example">Example</a></li>
@@ -1357,6 +1361,12 @@ $(document).ready(function(){
 <!-- ===================================== 
 	GRIDS/COLUMNS 
 ===================================== -->
+<style type="text/css">
+#grids-example [class*="col_"]{
+padding:10px;
+}
+</style>
+
 <h3 id="columns">Grids/Columns</h3>
 <ul class="tabs">
 <li><a href="#grids-example">Example</a></li>
@@ -1451,40 +1461,14 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi en
 <h3 id="images">Images</h3>
 <ul class="tabs">
 <li><a href="#images-example">Example</a></li>
-<li><a href="#images-placeholder">Placeholder</a></li>
-<li><a href="#images-style1">.style1</a></li>
-<li><a href="#images-style2">.style2</a></li>
-<li><a href="#images-style3">.style3</a></li>
 <li><a href="#images-caption">.caption</a></li>
+<li><a href="#images-gallery">DIV.gallery</a></li>
 <li><a href="#images-left">.align-left</a></li>
 <li><a href="#images-right">.align-right</a></li>
 <li><a href="#images-full-width">.full-width</a></li>
-<li><a href="#images-gallery">DIV.gallery</a></li>
 </ul>
 
 	<div id="images-example" class="tab-content">
-	<div class="col_3">
-	<h4>Placeholder</h4>
-	<img src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" /> 
-	</div>
-	
-	<div class="col_3">
-	<h4>IMG.style1</h4>
-	<img class="style1" src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" /> 
-	</div>
-	
-	<div class="col_3">
-	<h4>IMG.style2</h4>
-	<img class="style2" src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" /> 
-	</div>
-	
-	<div class="col_3">
-	<h4>IMG.style3</h4>
-	<img class="style3" src="http://placehold.it/180x150/4D99E0/ffffff.png&text=180x150" width="180" height="150" /> 
-	</div>
-	
-	<div class="clear">&nbsp;</div>
-	
 	<div class="col_6">
 	<h4>IMG.caption</h4>
 	<img class="caption" title="This is the image caption" src="http://placehold.it/400x350/4D99E0/ffffff.png&text=400x350" width="400" height="350" /> 
@@ -1526,30 +1510,6 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi en
 	<h4>IMG.full-width</h4>
 	<img class="full-width" src="http://placehold.it/260x200/4D99E0/ffffff.png&text=full+width" />	
 	</div>
-	</div>
-	
-	<div id="images-placeholder" class="tab-content">
-<pre>
-&lt;!-- Placeholder --&gt;
-&lt;img src=&quot;http://placehold.it/180x150/4D99E0/ffffff.png&amp;text=180x150&quot; width=&quot;180&quot; height=&quot;150&quot; /&gt;</pre>
-	</div>
-	
-	<div id="images-style1" class="tab-content">
-<pre>
-&lt;!-- Style1 --&gt;
-&lt;img class=&quot;style1&quot; src=&quot;http://placehold.it/180x150/4D99E0/ffffff.png&amp;text=180x150&quot; width=&quot;180&quot; height=&quot;150&quot; /&gt;</pre>
-	</div>
-	
-	<div id="images-style2" class="tab-content">
-<pre>
-&lt;!-- Style2 --&gt;
-&lt;img class=&quot;style2&quot; src=&quot;http://placehold.it/180x150/4D99E0/ffffff.png&amp;text=180x150&quot; width=&quot;180&quot; height=&quot;150&quot; /&gt;</pre>
-	</div>
-	
-	<div id="images-style3" class="tab-content">
-<pre>
-&lt;!-- Style3 --&gt;
-&lt;img class=&quot;style3&quot; src=&quot;http://placehold.it/180x150/4D99E0/ffffff.png&amp;text=180x150&quot; width=&quot;180&quot; height=&quot;150&quot; /&gt;</pre>
 	</div>
 	
 	<div id="images-caption" class="tab-content">
@@ -1614,7 +1574,7 @@ in hendrerit in vulputate velit esse molestie consequat.&lt;/p&gt;</pre>
 	<li><img src="http://placehold.it/550x350/4D99E0/ffffff.png&text=550x350" width="550" height="350" /></li>
 	<li><img src="http://placehold.it/550x350/75CC00/ffffff.png&text=550x350" width="550" height="350" /></li>
 	<li><img src="http://placehold.it/550x350/E49800/ffffff.png&text=550x350" width="550" height="350" /></li>
-	<li><span style="padding:20px;display:block;width:510px;"><h3>Slide Anything</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+	<li><span style="padding:20px;"><h3>Slide Anything</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
 	nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></span></li>
 	</ul>
 	</div>
@@ -1648,60 +1608,6 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	</div>
 
 
-<!-- ===================================== 
-	MEDIA
-===================================== -->
-<h3 id="media">Media</h3>
-<ul class="tabs">
-<li><a href="#media-example">Example</a></li>
-<li><a href="#media-videoplaceholder">Video Placeholder</a></li>
-<li><a href="#media-mapplaceholder">Map Placeholder</a></li>
-<li><a href="#media-calendar">Calendar</a></li>
-</ul>
-
-	<div id="media-example" class="tab-content">
-	<div class="col_4">
-	<h4>Video Placeholder</h4>
-	<a class="video-placeholder" href="http://youtu.be/lfnAb11wKQc"><img src="http://placehold.it/250x200/222222/999999.png" width="250" height="200" /></a>
-	</div>
-	
-	<div class="col_4">
-	<h4>Map Placholder</h4>
-	<iframe class="map-placeholder" width="100%" height="200" src="http://maps.google.com/maps?f=q&amp;t=m&amp;z=5&amp;output=embed" frameborder="0"></iframe>
-	</div>
-	
-	<div class="col_4">
-	<h4>Calendar</h4>
-	<div class="calendar" data-month="2" data-year="2012"></div>
-	</div>
-	</div>
-	
-	<div id="media-videoplaceholder" class="tab-content">
-<pre>
-&lt;!-- Video Placeholder --&gt;
-&lt;a class=&quot;video-placeholder&quot; href=&quot;http://youtu.be/lfnAb11wKQc&quot;&gt;&lt;img src=&quot;http://placehold.it/250x200/222222/999999.png&quot; width=&quot;250&quot; height=&quot;200&quot; /&gt;&lt;/a&gt;
-</pre>
-	</div>
-	
-	<div id="media-mapplaceholder" class="tab-content">
-<pre>
-&lt;!-- Map Placeholder --&gt;
-&lt;iframe class=&quot;map-placeholder&quot; width=&quot;100%&quot; height=&quot;200&quot; src=&quot;http://maps.google.com/maps?f=q&amp;t=m&amp;z=5&amp;output=embed&quot;  frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
-</pre>
-	</div>
-
-	<div id="media-calendar" class="tab-content">
-<pre>
-&lt;!-- Calendar --&gt;
-&lt;div class=&quot;calendar&quot; data-month=&quot;2&quot; data-year=&quot;2012&quot;&gt;&lt;/div&gt;
-
-&lt;!-- Set Calendar Month --&gt;
-data-month=&quot;2&quot;
-
-&lt;!-- Set Calendar Year --&gt;
-data-year=&quot;2012&quot;
-</pre>
-	</div>
 <!-- ===================================== 
 	FORMS 
 ===================================== -->
@@ -1748,16 +1654,8 @@ data-year=&quot;2012&quot;
 	<option value="3">Option 3</option>
 	</select>
 	
-	<label for="select2">Select.fancy</label>
-	<select id="select2" class="fancy" style="width:90%;">
-	<option value="0">-- Choose --</option>
-	<option value="1">Option 1</option>
-	<option value="2">Option 2</option>
-	<option value="3">Option 3</option>
-	</select>
-	
-	<label for="select3">Select.fancy multiple</label>
-	<select id="select3" multiple="multiple" class="fancy" style="width:259px;">
+	<label for="select3">Select multiple</label>
+	<select id="select3" multiple="multiple" class="fancy">
 	<option value="0">-- Choose --</option>
 	<option value="1">Option 1</option>
 	<option value="2">Option 2</option>
@@ -1952,9 +1850,6 @@ data-year=&quot;2012&quot;
 	<td><code>.visible</code></td>
 	<td>Add this to columns to view during production. Adds light grey background color to columns.</td>
 	</tr><tr>
-	<td><code>div.inner</code></td>
-	<td>All columns have an <code>div.inner</code> container automatically generated inside for easy CSS styling, adding and removing of padding inside columns.</td>
-	</tr><tr>
 	<td><code>.hide</code> <code>.show</code></td>
 	<td><code>.hide</code> to hide content (display:none). <code>.show</code> to show content (display:block).</td>
 	</tr><tr>
@@ -1966,7 +1861,7 @@ data-year=&quot;2012&quot;
 	</tr></thead></table>
 
 
-</div><!-- end top col_12 -->
+</div><!--END GRID WRAP-->
 
 <!-- ===================================== START FOOTER ===================================== -->
 <div class="clear"></div>
@@ -1975,5 +1870,5 @@ data-year=&quot;2012&quot;
 <a id="link-top" href="#top-of-page">Top</a>
 </div>
 
-</div><!-- END WRAP -->
+
 </body></html>
