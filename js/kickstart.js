@@ -38,7 +38,7 @@ jQuery(document).ready(function($){
 		startSlide: 0,
 		infiniteLoop: true,
 		captions: true,
-		adaptiveHeight: true,
+		adaptiveHeight: false,
 		touchEnabled: true,
 		pause: 4000,
 		autoControls: false,
@@ -205,7 +205,7 @@ jQuery(document).ready(function($){
 	/*---------------------------------
 		Notice
 	-----------------------------------*/
-	$('.notice a.close').live('click', function(e){
+	$('.notice a[class^="icon-remove"]').live('click', function(e){
 		e.preventDefault();
 		var notice = $(this).parents('.notice');
 		$(this).hide();
@@ -274,14 +274,6 @@ jQuery(document).ready(function($){
 		table.find('tr:even').addClass('alt');
 		table.find('tr:first').addClass('first');
 		table.find('tr:last').addClass('last');
-	});
-	
-	/*---------------------------------
-		Icons
-	-----------------------------------*/
-	$('.icon').each(function(){
-		$(this).html('<span aria-hidden="true">'+$(this).attr('data-icon')+'</span>')
-		.css('display', 'inline-block');
 	});
 	
 	/*---------------------------------

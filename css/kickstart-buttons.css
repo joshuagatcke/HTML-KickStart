@@ -90,59 +90,6 @@ input[type="button"]{*padding:7px 15px;}/*IE 7 ONLY*/
 	background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
 	}
 	
-	button img,
-	a.btn img,
-	a.button img,
-	input[type="submit"] img,
-	input[type="reset"] img,
-	input[type="button"] img{
-	display:inline;
-	margin:0;
-	vertical-align: middle;
-	margin:-10px 10px -5px -5px;
-	padding:0;
-	}
-	
-	.small img{margin:-3px 5px -3px -3px;}
-	.medium img{margin:-10px 10px -5px -5px;}
-	.large img{margin:-10px 10px -10px -10px;}
-	.icon-only{padding:7px 10px;}
-	.icon-only img{margin:0;display:block;padding:0;}
-	.icon-only .icon{margin:-5px -6px -8px -6px;}
-	
-	/* icons */
-	button .icon,
-	a.btn .icon,
-	a.button .icon,
-	input[type="submit"] .icon,
-	input[type="reset"] .icon,
-	input[type="button"] .icon{
-	vertical-align: middle;
-	margin:-2px 3px -7px -2px;
-	*margin:-5px 3px -10px 0px;/*IE 7 ONLY*/
-	}
-	
-	button .icon.medium,
-	a.btn .icon.medium,
-	a.button .icon.medium,
-	input[type="submit"] .icon.medium,
-	input[type="reset"] .icon.medium,
-	input[type="button"] .icon.medium{
-	margin-left:-5px;
-	*left:-5px;
-	*top:0px;
-	}
-	
-	button .icon.large,
-	a.btn .icon.large,
-	a.button .icon.large,
-	input[type="submit"] .icon.large,
-	input[type="reset"] .icon.large,
-	input[type="button"] .icon.large{
-	margin-left:-10px;
-	*left:-10px;
-	*top:0px;
-	}
 	
 /*---------------------------------
 	BUTTON BAR
@@ -224,13 +171,6 @@ background:0;
 	border-bottom-right-radius: 5px;
 	-moz-background-clip:content-box;
 	-webkit-background-clip: border;
-	}
-	
-	ul.button-bar li a .icon{
-	position:relative;
-	top:-1px;
-	left:0;
-	margin:-5px 0;
 	}
 	
 	ul.button-bar li a:hover{

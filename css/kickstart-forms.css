@@ -420,7 +420,7 @@ clear:both;
 	.notice.warning{}/*default*/
 	.notice.error{border:1px solid red;background:pink;color:red;}
 	.notice.success{border:1px solid green;background:lightgreen;color:green;}
-	.notice .icon{position:absolute;top:50%;left:7px;margin-top:-0.4em;}
-	.notice a.icon.close,
-	.notice a.icon.close:active,
-	.notice a.icon.close:visited{font-size:12px;position:absolute;top:5px;right:5px;left:auto;color:inherit;margin-top:0;left:auto;}
+	.notice i[class^='icon-']{position:absolute;top:50%;left:0.8em;margin-top:-0.6em;}
+	.notice a[class^='icon-remove'],
+	.notice a[class^='icon-remove']:active,
+	.notice a[class^='icon-remove']:visited{font-size:12px;position:absolute;top:5px;right:5px;left:auto;color:inherit;margin-top:0;left:auto;}

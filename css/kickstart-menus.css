@@ -120,10 +120,7 @@ z-index:600;
 	
 	/* dividers */ 	  .menu ul li.divider{border-top:1px solid #ccc;}
 					  .menu ul li.divider a{border-top:1px solid #fff;}
-					  
-	/* icons */
-	.menu .icon{margin:-10px 7px -10px -5px;vertical-align: middle;}
-	.menu ul .icon{margin-left:-10px;}
+
 
 
 /*---------------------------------
