@@ -13,12 +13,13 @@
 	OVERRIDES
 -----------------------------------*/
 h1,h2,h3,h4,h5,h6{
-font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+font-family: "Arimo", arial, verdana, sans-serif;
+font-weight:normal;
 }
 
 thead th,
 tbody th{
-font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 button,
@@ -26,15 +27,15 @@ a.btn,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{
-font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 .menu{
-font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 blockquote{
-font-family: "Trebuchet Ms", arial, verdana, sans-serif;
+font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 /*---------------------------------
@@ -45,7 +46,7 @@ margin:0;
 padding:0;
 color:#000;
 background:#efefef url(css/img/grid.png) repeat center top;
-font:normal 0.9em/150% 'Arimo', "Trebuchet MS", arial, verdana, sans-serif;
+font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
 text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
 }
 
