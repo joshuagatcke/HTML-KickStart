@@ -3,17 +3,239 @@
 <title>HTML KickStart Elements</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="" />
+<meta name="description" content="HTML KickStart is a ultra–lean set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to give you a headstart and save you a lot of hours on your next web project." />
+<meta name="copyright" content="Joshua Gatcke 99lime.com All Rights Reserved" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script type="text/javascript" src="js/prettify.js"></script>                                   <!-- PRETTIFY -->
 <script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
 <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />                          <!-- CUSTOM STYLES -->
 </head><body>
 <!-- ===================================== END HEADER ===================================== -->
+<nav class="navbar">
+<a class="hide-phone" id="logo" href="http://www.99lime.com"><i class="icon-angle-right"></i> 99<span>Lime</span></a>
+<ul>
+<li><a href="http://www.99lime.com/elements/"><span>HTML</span>KickStart</a></li>
+<li><a href="http://www.99lime.com/uikit/"><span>UI</span>KIT</a></li>
+<li><a href="http://www.99lime.com/blog/">Blog</a></li>
+</ul>
+</nav>
+<div class="callout callout-top clearfix">
+	<div class="grid">
+		<h1>HTML KickStart</h1>
+		<h4>Ultra–Lean HTML5, CSS, & JS Building Blocks<br />for Rapid Website Production</h4>
+		<div class="col_3">
+		<i class="icon-mobile-phone icon-4x"></i><br />
+		Responsive
+		</div>
+		
+		<div class="col_3">
+		<i class="icon-github icon-4x"></i><br />
+		MIT Open Source
+		</div>
+		
+		<div class="col_3">
+		<i class="icon-flag icon-4x"></i><br />
+		249 Icons<br />
+		</div>
+		
+		<div class="col_3 omega">
+		<i class="icon-tint icon-4x"></i><br />
+		Designer Friendly
+		</i>
+		</div>
+		<div class="clear"></div><br />
+		<a class="button red large" href="http://www.99lime.com/downloads/"><i class="icon-download-alt"></i> Download (Github)</a> 
+		<span style="white-space: nowrap;">
+		<a class="button blue large" href="https://twitter.com/htmlkickstart"><i class="icon-twitter"></i></a>
+		<a class="button blue large" href="mailto:joshua@99lime.com"><i class="icon-envelope-alt"></i></a></span><br />
+		<p>Downloaded over 91036 Times :)</p> 
+	</div>
+</div>
 
 <div class="grid">
+
+<!-- ===================================== 
+	INSTRUCTIONS 
+===================================== -->
+<h3>Getting Started</h3>
+<ul class="tabs">
+<li><a href="#instructions">Instructions</a></li>
+</ul>
+
+	<div id="instructions" class="tab-content">
+	<div class="col_8">
+	<h4><i class="icon-wrench"></i> Setup</h4>
+	<ol>
+	<li><a href="http://www.99lime.com/downloads/">Download HTML KickStart</a></li>
+	<li>Include jQuery and HTML KickStart
+<pre>
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/kickstart.js&quot;&gt;&lt;/script&gt; &lt;!-- KICKSTART --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/kickstart.css&quot; media=&quot;all&quot; /&gt; &lt;!-- KICKSTART --&gt;
+</pre>
+	</li>
+	<li>Copy Elements into your HTML</li>
+	</ol>
+	</div>
+	<div class="col_1"></div>
+	<div class="col_3">
+	<h4><i class="icon-globe"></i> Browsers</h4>
+	HTML KickStart Tested and working in IE 8+, Safari, Chrome, Firefox, Opera, Safari IOS, Browser and Chrome Android. 
+	<h4>Notes</h4>
+	Don't forget to use an HTML5 Doctype
+	<code>&lt;!DOCTYPE html&gt;</code>
+	</div>
+	</div>
+	
+<!-- ===================================== 
+	BUTTONS 
+===================================== -->
+<style type="text/css">
+#btn-example .button-bar{margin-bottom:10px;}
+</style>
+
+<h3 id="buttons">Buttons</h3>
+<ul class="tabs">
+<li><a href="#btn-example">Example</a></li>
+<li><a href="#btn-sizes">Sizes</a></li>
+<li><a href="#btn-icons">With Icons</a></li>
+<li><a href="#btn-colors">Colors</a></li>
+<li><a href="#btn-styles">Styles</a></li>
+<li><a href="#btn-bar">Button Bar</a></li>
+</ul>
+	
+	<style type="text/css">
+	#btn-example a.button, #btn-example button{margin-bottom:10px;}
+	</style>
+
+	<div id="btn-example" class="tab-content">
+	<div class="col_3">
+	<h4>Buttons</h4>
+	<button>Button</button><br />
+	<a class="button" href="">A.button</a><br />
+	<button class="small">Small</button> <br />
+	<button class="small" disabled="disabled">Small (disabled)</button><br />
+	<button class="medium">Medium</button><br />
+	<button class="large">Large</button>
+	</div>
+	
+	<!-- BUTTONS W/ICON -->
+	<div class="col_3">
+	<h4>With Icons</h4>
+	<button class="small"><i class="icon-picture"></i> Small</button><br />
+	<button class="medium"><i class="icon-coffee"></i> Medium</button><br />
+	<button class="large"><i class="icon-leaf"></i> Large</button><br />
+	</div>
+	
+	<!-- BUTTON VARIATIONS -->
+	<div class="col_3">
+	<h4>Colors</h4>
+	<button class="blue"><i class="icon-star"></i> .blue</button><br />
+	<a class="button orange" href=""><i class="icon-music"></i> .orange</a><br />
+	<button class="small pink"><i class="icon-plus-sign"></i> .pink</button><br /> 
+	<button class="medium green"><i class="icon-play-circle"></i> .green</button><br />
+	<button class="large red"><i class="icon-minus-sign"></i> .red</button>
+	</div>
+	
+	<!-- BUTTON STYLES -->
+	<div class="col_3">
+	<h4>Styles</h4>
+	<button>default</button><br />
+	<button class="pill"><i class="icon-star"></i> .pill</button><br />
+	<a class="button pop" href=""><i class="icon-music"></i> .pop</a><br />
+	<button class="inset"><i class="icon-plus-sign"></i> .inset</button> <br />
+	<button class="square"><i class="icon-minus-sign"></i> .square</button>
+	</div><div class="clear"></div>
+	
+	<div class="col_12">
+	<h4>Button Bar</h4>
+	<ul class="button-bar">
+	<li><a href=""><i class="icon-pencil"></i> Edit</a></li>
+	<li><a href=""><i class="icon-tag"></i> Tag</a></li>
+	<li><a href=""><i class="icon-upload-alt"></i> Upload</a></li>
+	<li><a href=""><i class="icon-plus-sign"></i></a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href=""><i class="icon-folder-open"></i></a></li>
+	<li><a href=""><i class="icon-file"></i></a></li>
+	<li><a href=""><i class="icon-trash"></i></a></li>
+	<li><a href=""><i class="icon-wrench"></i></a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href="">Item1</a></li>
+	<li><a href=""><i class="icon-globe"></i> Item2</a></li>
+	<li><a href="">Item3</a></li>
+	<li><a href="">Item4</a></li>
+	</ul>&nbsp;&nbsp;
+	
+	<ul class="button-bar">
+	<li><a href=""><i class="icon-caret-left"></i></a></li>
+	<li><a href=""><i class="icon-caret-right"></i></a></li>
+	</ul>
+	</div>
+	</div>
+	
+	<div id="btn-sizes" class="tab-content">
+<pre>
+&lt;!-- Button Sizes --&gt;
+&lt;button&gt;Button&lt;/button&gt;
+&lt;a class=&quot;button&quot; href=&quot;&quot;&gt;A.button&lt;/a&gt;
+&lt;button class=&quot;small&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;small&quot; disabled=&quot;disabled&quot;&gt;Small (disabled)&lt;/button&gt;
+&lt;button class=&quot;medium&quot;&gt;Medium&lt;/button&gt;
+&lt;button class=&quot;large&quot;&gt;Large&lt;/button&gt;</pre>
+	</div>
+	
+	<div id="btn-icons" class="tab-content">
+<pre>
+&lt;!-- Buttons w/Icons --&gt;
+&lt;button class=&quot;small&quot;&gt;&lt;i class=&quot;icon-picture&quot;&gt;&lt;/i&gt; Small&lt;/button&gt;
+&lt;button class=&quot;medium&quot;&gt;&lt;i class=&quot;icon-coffee&quot;&gt;&lt;/i&gt; Medium&lt;/button&gt;
+&lt;button class=&quot;large&quot;&gt;&lt;i class=&quot;icon-leaf&quot;&gt;&lt;/i&gt; Large&lt;/button&gt;</pre>
+	</div>
+	
+	<div id="btn-colors" class="tab-content">
+<pre>
+&lt;!-- Buttons w/Colors --&gt;
+&lt;button class=&quot;blue&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; .blue&lt;/button&gt;
+&lt;a class=&quot;button orange&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon-music&quot;&gt;&lt;/i&gt; .orange&lt;/a&gt;
+&lt;button class=&quot;small pink&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt; .pink&lt;/button&gt;
+&lt;button class=&quot;medium green&quot;&gt;&lt;i class=&quot;icon-play-circle&quot;&gt;&lt;/i&gt; .green&lt;/button&gt;
+&lt;button class=&quot;large red&quot;&gt;&lt;i class=&quot;icon-minus-sign&quot;&gt;&lt;/i&gt; .red&lt;/button&gt;</pre>
+	</div>
+	
+	<div id="btn-styles" class="tab-content">
+<pre>
+&lt;!-- Default (no style) --&gt;
+&lt;button&gt;default&lt;/button&gt;
+
+&lt;!-- Pill --&gt;
+&lt;button class=&quot;pill&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; .pill&lt;/button&gt;
+
+&lt;!-- Pop --&gt;
+&lt;a class=&quot;button pop&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon-music&quot;&gt;&lt;/i&gt; .pop&lt;/a&gt;
+
+&lt;!-- Inset --&gt;
+&lt;button class=&quot;inset&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt; .inset&lt;/button&gt;
+
+&lt;!-- Square --&gt;
+&lt;button class=&quot;square&quot;&gt;&lt;i class=&quot;icon-minus-sign&quot;&gt;&lt;/i&gt; .square&lt;/button&gt;
+</pre>
+	</div>
+	
+	<div id="btn-bar" class="tab-content">
+<pre>
+&lt;!-- Button Bar w/icons --&gt;
+&lt;ul class=&quot;button-bar&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; Edit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-tag&quot;&gt;&lt;/i&gt; Tag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-upload-alt&quot;&gt;&lt;/i&gt; Upload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+	</div>
 
 <!-- ===================================== 
 	LISTS 
@@ -762,14 +984,14 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
-#icon-description{border:1px solid lightblue;padding:20px;background:#fff;}
+#icon-description{border:1px solid #ddd;padding:20px;background:#fff;}
 #icon-description span{color:red;}
 </style>
 
 <h3 id="icons">Icons/Glyphs</h3>
 <div id="icon-description" class="clearfix">
 	<div class="col_7">
-	<h4>HTML KickStart now using <a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome Icons</a>!</h4>
+	<h4>HTML KickStart now using<br /><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome Icons</a>!</h4>
 	How to use icons: <code>&lt;i class=&quot;<span>icon-globe</span>&quot;&gt;&lt;/i&gt;</code>. 
 	<br />Replace <span>icon-globe</span> with the icon you would like to use. </div>
 	<div class="col_5">
@@ -1239,156 +1461,6 @@ $(document).ready(function(){
 &lt;pre&gt;
 &#8230;code goes here&#8230; 
 &lt;/pre&gt;</pre>
-	</div>
-
-<!-- ===================================== 
-	BUTTONS 
-===================================== -->
-<style type="text/css">
-#btn-example .button-bar{margin-bottom:10px;}
-</style>
-
-<h3 id="buttons">Buttons</h3>
-<ul class="tabs">
-<li><a href="#btn-example">Example</a></li>
-<li><a href="#btn-sizes">Sizes</a></li>
-<li><a href="#btn-icons">With Icons</a></li>
-<li><a href="#btn-colors">Colors</a></li>
-<li><a href="#btn-styles">Styles</a></li>
-<li><a href="#btn-bar">Button Bar</a></li>
-</ul>
-	
-	<style type="text/css">
-	#btn-example a.button, #btn-example button{margin-bottom:10px;}
-	</style>
-
-	<div id="btn-example" class="tab-content">
-	<div class="col_3">
-	<h4>Buttons</h4>
-	<button>Button</button><br />
-	<a class="button" href="">A.button</a><br />
-	<button class="small">Small</button> <br />
-	<button class="small" disabled="disabled">Small (disabled)</button><br />
-	<button class="medium">Medium</button><br />
-	<button class="large">Large</button>
-	</div>
-	
-	<!-- BUTTONS W/ICON -->
-	<div class="col_3">
-	<h4>With Icons</h4>
-	<button class="small"><i class="icon-picture"></i> Small</button><br />
-	<button class="medium"><i class="icon-coffee"></i> Medium</button><br />
-	<button class="large"><i class="icon-leaf"></i> Large</button><br />
-	</div>
-	
-	<!-- BUTTON VARIATIONS -->
-	<div class="col_3">
-	<h4>Colors</h4>
-	<button class="blue"><i class="icon-star"></i> .blue</button><br />
-	<a class="button orange" href=""><i class="icon-music"></i> .orange</a><br />
-	<button class="small pink"><i class="icon-plus-sign"></i> .pink</button><br /> 
-	<button class="medium green"><i class="icon-play-circle"></i> .green</button><br />
-	<button class="large red"><i class="icon-minus-sign"></i> .red</button>
-	</div>
-	
-	<!-- BUTTON STYLES -->
-	<div class="col_3">
-	<h4>Styles</h4>
-	<button>default</button><br />
-	<button class="pill"><i class="icon-star"></i> .pill</button><br />
-	<a class="button pop" href=""><i class="icon-music"></i> .pop</a><br />
-	<button class="inset"><i class="icon-plus-sign"></i> .inset</button> <br />
-	<button class="square"><i class="icon-minus-sign"></i> .square</button>
-	</div><div class="clear"></div>
-	
-	<div class="col_12">
-	<h4>Button Bar</h4>
-	<ul class="button-bar">
-	<li><a href=""><i class="icon-pencil"></i> Edit</a></li>
-	<li><a href=""><i class="icon-tag"></i> Tag</a></li>
-	<li><a href=""><i class="icon-upload-alt"></i> Upload</a></li>
-	<li><a href=""><i class="icon-plus-sign"></i></a></li>
-	</ul>&nbsp;&nbsp;
-	
-	<ul class="button-bar">
-	<li><a href=""><i class="icon-folder-open"></i></a></li>
-	<li><a href=""><i class="icon-file"></i></a></li>
-	<li><a href=""><i class="icon-trash"></i></a></li>
-	<li><a href=""><i class="icon-wrench"></i></a></li>
-	</ul>&nbsp;&nbsp;
-	
-	<ul class="button-bar">
-	<li><a href="">Item1</a></li>
-	<li><a href=""><i class="icon-globe"></i> Item2</a></li>
-	<li><a href="">Item3</a></li>
-	<li><a href="">Item4</a></li>
-	</ul>&nbsp;&nbsp;
-	
-	<ul class="button-bar">
-	<li><a href=""><i class="icon-caret-left"></i></a></li>
-	<li><a href=""><i class="icon-caret-right"></i></a></li>
-	</ul>
-	</div>
-	</div>
-	
-	<div id="btn-sizes" class="tab-content">
-<pre>
-&lt;!-- Button Sizes --&gt;
-&lt;button&gt;Button&lt;/button&gt;
-&lt;a class=&quot;button&quot; href=&quot;&quot;&gt;A.button&lt;/a&gt;
-&lt;button class=&quot;small&quot;&gt;Small&lt;/button&gt;
-&lt;button class=&quot;small&quot; disabled=&quot;disabled&quot;&gt;Small (disabled)&lt;/button&gt;
-&lt;button class=&quot;medium&quot;&gt;Medium&lt;/button&gt;
-&lt;button class=&quot;large&quot;&gt;Large&lt;/button&gt;</pre>
-	</div>
-	
-	<div id="btn-icons" class="tab-content">
-<pre>
-&lt;!-- Buttons w/Icons --&gt;
-&lt;button class=&quot;small&quot;&gt;&lt;i class=&quot;icon-picture&quot;&gt;&lt;/i&gt; Small&lt;/button&gt;
-&lt;button class=&quot;medium&quot;&gt;&lt;i class=&quot;icon-coffee&quot;&gt;&lt;/i&gt; Medium&lt;/button&gt;
-&lt;button class=&quot;large&quot;&gt;&lt;i class=&quot;icon-leaf&quot;&gt;&lt;/i&gt; Large&lt;/button&gt;</pre>
-	</div>
-	
-	<div id="btn-colors" class="tab-content">
-<pre>
-&lt;!-- Buttons w/Colors --&gt;
-&lt;button class=&quot;blue&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; .blue&lt;/button&gt;
-&lt;a class=&quot;button orange&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon-music&quot;&gt;&lt;/i&gt; .orange&lt;/a&gt;
-&lt;button class=&quot;small pink&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt; .pink&lt;/button&gt;
-&lt;button class=&quot;medium green&quot;&gt;&lt;i class=&quot;icon-play-circle&quot;&gt;&lt;/i&gt; .green&lt;/button&gt;
-&lt;button class=&quot;large red&quot;&gt;&lt;i class=&quot;icon-minus-sign&quot;&gt;&lt;/i&gt; .red&lt;/button&gt;</pre>
-	</div>
-	
-	<div id="btn-styles" class="tab-content">
-<pre>
-&lt;!-- Default (no style) --&gt;
-&lt;button&gt;default&lt;/button&gt;
-
-&lt;!-- Pill --&gt;
-&lt;button class=&quot;pill&quot;&gt;&lt;i class=&quot;icon-star&quot;&gt;&lt;/i&gt; .pill&lt;/button&gt;
-
-&lt;!-- Pop --&gt;
-&lt;a class=&quot;button pop&quot; href=&quot;&quot;&gt;&lt;i class=&quot;icon-music&quot;&gt;&lt;/i&gt; .pop&lt;/a&gt;
-
-&lt;!-- Inset --&gt;
-&lt;button class=&quot;inset&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt; .inset&lt;/button&gt;
-
-&lt;!-- Square --&gt;
-&lt;button class=&quot;square&quot;&gt;&lt;i class=&quot;icon-minus-sign&quot;&gt;&lt;/i&gt; .square&lt;/button&gt;
-</pre>
-	</div>
-	
-	<div id="btn-bar" class="tab-content">
-<pre>
-&lt;!-- Button Bar w/icons --&gt;
-&lt;ul class=&quot;button-bar&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-pencil&quot;&gt;&lt;/i&gt; Edit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-tag&quot;&gt;&lt;/i&gt; Tag&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-upload-alt&quot;&gt;&lt;/i&gt; Upload&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;icon-plus-sign&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
 	</div>
 
 <!-- ===================================== 
@@ -1892,8 +1964,8 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<textarea id="textarea1" placeholder="Placeholder Text"></textarea>
 	
 	<button type="submit">Submit</button>
-		</form>
-	</div><div class="clear"></div>
+	</div>
+	</form>
 	<hr />
 	
 	<div class="col_12">
@@ -1916,13 +1988,13 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<hr />
 	
 	<style type="text/css">
-	#form-sizes label{border:1px dotted #ccc;*border:0;*background:#efefef;}
+	#form-sizes label{border:1px dotted #ccc;}
 	</style>
 	
 	<div id="form-sizes" class="col_12">
 	<h4>Input/Label Sizes</h4>
-	<label class="col_12">label.col_12</label>
-	<input type="text" placeholder=".col_1" class="col_1" /><label class="col_11">label.col_11</label>
+	<!--label class="col_12">label.col_12</label-->
+	<!--input type="text" placeholder=".col_1" class="col_1" /><label class="col_11">label.col_11</label-->
 	<input type="text" placeholder=".col_2" class="col_2" /><label class="col_10">label.col_10</label>
 	<input type="text" placeholder=".col_3" class="col_3" /><label class="col_9">label.col_9</label>
 	<input type="text" placeholder=".col_4" class="col_4" /><label class="col_8">label.col_8</label>
@@ -1932,8 +2004,8 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<input type="text" placeholder=".col_8" class="col_8" /><label class="col_4">label.col_4</label>
 	<input type="text" placeholder=".col_9" class="col_9" /><label class="col_3">label.col_3</label>
 	<input type="text" placeholder=".col_10" class="col_10" /><label class="col_2">label.col_2</label>
-	<input type="text" placeholder=".col_11" class="col_11" /><label class="col_1">label.col_1</label>
-	<input type="text" placeholder=".col_12" class="col_12" />
+	<!--input type="text" placeholder=".col_11" class="col_11" /><label class="col_1">label.col_1</label-->
+	<!--input type="text" placeholder=".col_12" class="col_12" /-->
 	</div>
 	</div>
 	
@@ -2024,6 +2096,11 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	Extras/Helpers
 ===================================== -->
 <h3 id="forms">Extras/Helpers</h3>
+	<ul class="tabs">
+	<li><a href="#extras">Extras</a></li>
+	</ul>
+	
+	<div id="extras" class="tab-content">
 	<table><thead><tr>
 	<th>Item</th>
 	<th>Description</th>
@@ -2059,15 +2136,62 @@ sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat vol
 	<td><code>tr.alt</code></td>
 	<td>Every second table row automatically gets class <code>.alt</code>.</td>
 	</tr></thead></table>
+	</div>
 
 
 </div><!--END GRID WRAP-->
 
+<div class="callout clearfix">
+	<div class="grid">
+		<a class="button red large" href="http://www.99lime.com/downloads/"><i class="icon-download-alt"></i> Download (Github)</a> 
+		<span style="white-space: nowrap;">
+		<a class="button blue large" href="https://twitter.com/htmlkickstart"><i class="icon-twitter"></i></a>
+		<a class="button blue large" href="mailto:joshua@99lime.com"><i class="icon-envelope-alt"></i></a></span><br />
+		<p>Downloaded over 91036 Times :)</p>
+	</div>
+</div>
+
+<!-- Begin MailChimp Signup Form -->
+<div class="grid center" id="mc_embed_signup">
+<form action="http://99lime.us4.list-manage2.com/subscribe/post?u=f4a8f36be8ffba6bf0580ef5f&amp;id=67a4916516" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+
+<div class="mc-field-group">
+<h4>HTML KickStart Announcements and Releases.</h4>
+
+<input type="email" style="width:40%;" value="" placeholder="name@domain.com" name="EMAIL" class="required email" id="mce-EMAIL">
+<button class="button small orange" type="submit" value="Get Notified" name="subscribe" id="mc-embedded-subscribe">Get Notified</button>
+</div>
+<label for="mce-EMAIL"><span>No spam. We hate spam too.</span></label>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
 <!-- ===================================== START FOOTER ===================================== -->
 <div class="clear"></div>
 <div id="footer">
-&copy; Copyright 2011–2012 All Rights Reserved. This website was built with <a href="http://www.99lime.com">HTML KickStart</a>
+&copy; Copyright 2014 All Rights Reserved. This website was built with 
+<a href="http://www.99lime.com">HTML KickStart</a> • 
+<a href="http://99lime.com/rss/">RSS</a> • 
+<a href="http://www.99lime.com/_bak2/">Joshua Gatcke</a>
 </div>
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1641401-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body></html>

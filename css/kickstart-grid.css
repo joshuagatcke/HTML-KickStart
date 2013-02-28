@@ -20,13 +20,14 @@
 .grid{
 max-width:1220px;
 margin:0 auto;
-padding:0 2%;
+padding:0 2em;
 }
 
 .grid.flex{
 width:100%;
 max-width:100%;
 padding:0 2%;
+padding:2em;
 }
 
 .row{
@@ -34,6 +35,9 @@ display:block;
 overflow:hidden;
 clear:both;
 }
+
+*[class*="col_"].alpha{margin-left:0;}
+*[class*="col_"].omega{margin-right:0;}
  
 .col_1  { width: 6.6666666666667%; }
 .col_2  { width: 15%; }
@@ -71,7 +75,8 @@ height:auto;
 	This will add a background color so you can see the layout of your grids. 
 */
 *[class*="col_"].visible{
-background:#efefef;
+background:#eee;
+border:1px dotted #ccc;
 }
 
 
