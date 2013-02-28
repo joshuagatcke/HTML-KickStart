@@ -133,13 +133,23 @@ color:#fff;
 box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
 text-align: center;
 text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
 }
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
 	 .callout i.icon-4x{font-size:6em;}
 	 .callout h4{margin-bottom:30px;}
-	 .callout-top{margin:50px 0 50px 0;}
+	 .callout-top{margin:50px 0 0 0;}
 	 .callout p{margin-bottom:0;}
 	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
 	 
 #mc_embed_signup{
 padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
 }
