@@ -43,7 +43,7 @@ font-family: "Arimo", arial, verdana, sans-serif;
 -----------------------------------*/
 body{
 margin:0;
-padding:100px 0 0 0;
+padding:0 0 0 0;
 color:#000;
 background:#efefef url(css/img/gray_jean.png);
 font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
@@ -136,7 +136,7 @@ text-shadow:0px 1px 3px rgba(0,0,0,0.2);
 }
 	 .callout i.icon-4x{font-size:6em;}
 	 .callout h4{margin-bottom:30px;}
-	 .callout-top{margin:-50px 0 50px 0;}
+	 .callout-top{margin:50px 0 50px 0;}
 	 .callout p{margin-bottom:0;}
 	 .callout .button{margin-top:10px;}
 	 

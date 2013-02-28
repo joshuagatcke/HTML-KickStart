@@ -2,7 +2,7 @@
 # HMTL KickStart #
 by Joshua Gatcke
 http://www.99lime.com
-Version: 0.93
+Version: 0.94
 
 ## What is HTML KickStart? ##
 
