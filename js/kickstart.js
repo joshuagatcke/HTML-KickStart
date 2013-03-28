@@ -11,12 +11,12 @@ jQuery(document).ready(function($){
 	$('ul.menu').each(function(){
 		// add the menu toggle
 		$(this).prepend('<li class="menu-toggle"><a href="#"><span class="icon" data-icon="Y"></span> Menu</a></li>');
-	
+
 		// find menu items with children.
 		$(this).find('li').has('ul').addClass('has-menu')
 		.find('a:first').append('<span class="arrow">&nbsp;</span>');
 	});
-	
+
 	$('ul.menu li').hover(function(){
 		$(this).find('ul:first').stop(true, true).fadeIn('fast');
 		$(this).addClass('hover');
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 		$(this).find('ul').stop(true, true).fadeOut('slow');
 		$(this).removeClass('hover');
 	});
-	
+
 	/*---------------------------------
 		Slideshow
 	-----------------------------------*/
@@ -46,12 +46,12 @@ jQuery(document).ready(function($){
 		autoStart: true,
 		auto: true
 	});
-		
+
 	/*---------------------------------
 		HTML5 Placeholder Support
 	-----------------------------------*/
 	$('input[placeholder], textarea[placeholder]').placeholder();
-	
+
 	/*---------------------------------
 		Fancybox Lightbox
 	-----------------------------------*/
@@ -62,13 +62,13 @@ jQuery(document).ready(function($){
 			overlayColor: '#000'
 		});
 	});
-	
+
 	// lightbox links
 	$('a.lightbox').fancybox({
 		overlayOpacity: 0.2,
 		overlayColor: '#000'
 	});
-	
+
 	/*---------------------------------
 		Tabs
 	-----------------------------------*/
@@ -80,9 +80,9 @@ jQuery(document).ready(function($){
 		current = $(this).find('li.current a').attr('href');
 		$(current).show();
 	});
-	
+
 	// tab click
-	$('ul.tabs a[href^="#"]').live('click', function(e){
+	$(document).on('click', 'ul.tabs a[href^="#"]', function(e){
 		e.preventDefault();
 		var tabs = $(this).parents('ul.tabs').find('li');
 		var tab_next = $(this).attr('href');
@@ -94,7 +94,7 @@ jQuery(document).ready(function($){
 		history.pushState( null, null, window.location.search + $(this).attr('href') );
 		return false;
 	});
-	
+
  	// tab hashtag identification and auto-focus
     	var wantedTag = window.location.hash;
     	if (wantedTag != "")
@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
         	$("ul.tabs a[href^=" + wantedTag + "]").parent().addClass('current');
         	$("#" + wantedTag.replace('#','')).show();
     	}
-	
+
 	/*---------------------------------
 		Image Caption
 	-----------------------------------*/
@@ -114,53 +114,53 @@ jQuery(document).ready(function($){
 		$(this).wrap('<div class="caption">');
 		$(this).parents('div.caption')
 			.attr('class', 'caption '+$(this).attr('class'));
-		if($(this).attr('title')){ 
+		if($(this).attr('title')){
 			$(this).parents('div.caption')
 			.append('<span>'+$(this).attr('title')+'</span>');
 		}
 	});
-	
+
 	/*---------------------------------
 		Notice
 	-----------------------------------*/
-	$('.notice a[class^="icon-remove"]').live('click', function(e){
+	$(document).on('click', '.notice a[class^="icon-remove"]', function(e){
 		e.preventDefault();
 		var notice = $(this).parents('.notice');
 		$(this).hide();
 		notice.fadeOut('slow');
 	});
-	
+
 	/*---------------------------------
 		ToolTip - TipTip
-	-----------------------------------*/	
-	
+	-----------------------------------*/
+
 	// Standard tooltip
 	$('.tooltip, .tooltip-top, .tooltip-bottom, .tooltip-right, .tooltip-left').each(function(){
-		// variables 
+		// variables
 		var tpos = 'top';
 		var content = $(this).attr('title');
 		var dataContent = $(this).attr('data-content');
 		var keepAlive = false;
 		var action = 'hover';
-		
+
 		// position
 		if($(this).hasClass('tooltip-top')) 	{ tpos = 'top'; 	}
 		if($(this).hasClass('tooltip-right')) 	{ tpos = 'right'; 	}
 		if($(this).hasClass('tooltip-bottom')) 	{ tpos = 'bottom'; 	}
 		if($(this).hasClass('tooltip-left')) 	{ tpos = 'left'; 	}
-		
+
 		// content
 		$('.tooltip-content').removeClass('hide').wrap('<div class="hide"></div>');
 		if(dataContent) { content = $(dataContent).html(); keepAlive = true; }
-		
+
 		// action (hover or click) defaults to hover
 		if($(this).attr('data-action') == 'click') { action = 'click'; }
-		
+
 		// tooltip
 		$(this).attr('title','')
 		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action, delay: 1000});
 	});
-	
+
 	/*---------------------------------
 		Table Sort
 	-----------------------------------*/
@@ -172,20 +172,20 @@ jQuery(document).ready(function($){
 	});
 
 	// table click
-	$('table.sortable thead th').live('click', function(e){
+	$(document).on('click', 'table.sortable thead th', function(e){
 		// update arrow icon
 		$(this).parents('table.sortable').find('span.arrow').remove();
 		$(this).append('<span class="arrow"></span>');
-	
+
 		// sort direction
 		var nr = $(this).attr('rel');
 		aAsc[nr] = aAsc[nr]=='asc'?'desc':'asc';
 		if(aAsc[nr] == 'desc'){ $(this).find('span.arrow').addClass('up'); }
-		
+
 		// sort rows
 		var rows = $(this).parents('table.sortable').find('tbody tr');
 		rows.tsort('td:eq('+nr+')',{order:aAsc[nr],attr:'value'});
-		
+
 		// fix row classes
 		rows.removeClass('alt first last');
 		var table = $(this).parents('table.sortable');
@@ -193,7 +193,7 @@ jQuery(document).ready(function($){
 		table.find('tr:first').addClass('first');
 		table.find('tr:last').addClass('last');
 	});
-	
+
 	/*---------------------------------
 		CSS Helpers
 	-----------------------------------*/
@@ -210,7 +210,7 @@ jQuery(document).ready(function($){
 	$('hr').before('<div class="clear">&nbsp;</div>');
 	$('[class*="col_"]').addClass('column');
 	$('pre').addClass('prettyprint');prettyPrint();
-	
+
 });
 
 /*
@@ -230,10 +230,10 @@ a.focus(function(){if(this.value==""){var a=this.createTextRange();a.collapse(!0
  * Simple and fancy lightbox alternative
  *
  * Examples and documentation at: http://fancybox.net
- * 
+ *
  * Copyright (c) 2008 - 2010 Janis Skarnelis
  * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
- * 
+ *
  * Version: 1.3.4 (11/11/2010)
  * Requires: jQuery v1.3+
  *
@@ -284,7 +284,7 @@ easingOut:"swing",showCloseButton:true,showNavArrows:true,enableEscapeButton:tru
  * browser tooltip. It is extremely lightweight and very smart in
  * that it detects the edges of the browser window and will make sure
  * the tooltip stays within the current window size. As a result the
- * tooltip will adjust itself to be displayed above, below, to the left 
+ * tooltip will adjust itself to be displayed above, below, to the left
  * or to the right depending on what is necessary to stay within the
  * browser window. It is completely customizable as well via CSS.
  *
