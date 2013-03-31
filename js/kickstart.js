@@ -82,7 +82,7 @@ jQuery(document).ready(function($){
 	});
 	
 	// tab click
-	$('ul.tabs a[href^="#"]').live('click', function(e){
+	$('ul.tabs').on('click', 'a[href^="#"]', function(e){
 		e.preventDefault();
 		var tabs = $(this).parents('ul.tabs').find('li');
 		var tab_next = $(this).attr('href');
@@ -123,7 +123,7 @@ jQuery(document).ready(function($){
 	/*---------------------------------
 		Notice
 	-----------------------------------*/
-	$('.notice a[class^="icon-remove"]').live('click', function(e){
+	$('.notice').on('click', 'a[class^="icon-remove"]', function(e){
 		e.preventDefault();
 		var notice = $(this).parents('.notice');
 		$(this).hide();
@@ -172,7 +172,7 @@ jQuery(document).ready(function($){
 	});
 
 	// table click
-	$('table.sortable thead th').live('click', function(e){
+	$('table.sortable').on('click', 'thead th', function(e){
 		// update arrow icon
 		$(this).parents('table.sortable').find('span.arrow').remove();
 		$(this).append('<span class="arrow"></span>');
