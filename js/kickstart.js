@@ -113,7 +113,7 @@ jQuery(document).ready(function($){
 	$('img.caption').each(function(){
 		$(this).wrap('<div class="caption">');
 		$(this).parents('div.caption')
-			.attr('class', 'caption '+$(this).attr('class'));
+			.attr('class', 'img-wrap '+$(this).attr('class'));
 		if($(this).attr('title')){
 			$(this).parents('div.caption')
 			.append('<span>'+$(this).attr('title')+'</span>');
