@@ -217,11 +217,8 @@ box-sizing: border-box;
 -----------------------------------*/
 
 /* sizes */
-input[class*="col_"]{
-float:none;display:inline-block;*display:inline;margin-bottom:0;
-*margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
-}
-
+input[class*="col_"],
+select[class*="col_"],
 label[class*="col_"]{
 float:none;display:inline-block;*display:inline;margin-bottom:0;
 *margin-left: 0.5%;*margin-right: 0.5%;/* this is for IE 7 Only and is not a good fix - work needed here */
