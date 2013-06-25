@@ -142,6 +142,8 @@ jQuery(document).ready(function($){
 		var dataContent = $(this).attr('data-content');
 		var keepAlive = false;
 		var action = 'hover';
+		var delay = $(this).attr('data-delay');
+		if (delay === undefined) {delay = 1000;}
 
 		// position
 		if($(this).hasClass('tooltip-top')) 	{ tpos = 'top'; 	}
@@ -158,7 +160,7 @@ jQuery(document).ready(function($){
 
 		// tooltip
 		$(this).attr('title','')
-		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action, delay: 1000});
+		.tipTip({defaultPosition: tpos, content: content, keepAlive: keepAlive, activation: action, delay: delay});
 	});
 
 	/*---------------------------------
