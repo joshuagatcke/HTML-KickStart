@@ -187,10 +187,19 @@ select{
 display:inline;
 width:auto;
 margin:0;
+border:1px solid #ccc;
 line-height:100%;
 padding:3px;
 vertical-align: middle;
 }
+
+        select[disabled="disabled"], select.disabled{
+        color:#999;
+        background:#f5f5f5;
+        -moz-box-shadow:inset 0px 0px 2px #ddd;
+        -webkit-box-shadow:inset 0px 1px 2px #ddd;
+        box-shadow:inset 0px 1px 2px #ddd;
+        }
 
 textarea{
 width:auto;
@@ -249,6 +258,7 @@ form.vertical{
 -----------------------------------*/
 label.error{color:red;}
 input.error{border:1px solid red;}
+select.error{border:1px solid red;}
 
 /*---------------------------------
 	NOTICES
