@@ -1,7 +1,7 @@
 /*
 	99Lime.com HTML KickStart by Joshua Gatcke
 	style.css
-	
+
 */
 
 /*---------------------------------
@@ -47,7 +47,7 @@ padding:0 0 0 0;
 color:#000;
 background:#efefef url(css/img/gray_jean.png);
 font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
-text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
 
 #wrap{
@@ -76,7 +76,7 @@ background:#fff;
 	#link-top{
 	display:none;
 	}
-	
+
 /* NAV BAR*/
 .navbar{
 position:fixed;
@@ -97,25 +97,25 @@ z-index:1000;
 	color:#efefef;
 	text-decoration:none;
 	}
-	
+
 	.navbar span{
 	color:#86dc00;
 	}
-	
-	
+
+
 	.navbar ul{
 	display:inline-block;
 	margin:0;
 	padding:0;
 	}
-	
+
 		.navbar li{
 		margin:0;
 		padding:0;
 		list-style-type:0;
 		display:inline-block;
 		}
-		
+
 		.navbar li a{
 		display:inline-block;
 		color:#efefef;
@@ -125,12 +125,12 @@ z-index:1000;
 		line-height:100%;
 		font-size: 1.2em;
 		}
-		
+
 .callout{
 background:#4598ef;/*#86dc00;*/
 padding:3em 0;
 color:#fff;
-box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
+box-shadow:inset 0 0 10px rgba(0,0,0,0.2);
 text-align: center;
 text-shadow:0px 1px 3px rgba(0,0,0,0.2);
 display:block;
@@ -143,7 +143,7 @@ display:block;
 	 .callout p{margin-bottom:0;}
 	 .callout .button{margin-top:10px;}
 	 .callout.green{background:#19ad0b;/*#86dc00;*/}
-	 
+
 #mc_embed_signup{
 padding:30px 0;
 }
