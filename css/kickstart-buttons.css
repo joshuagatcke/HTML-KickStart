@@ -1,7 +1,7 @@
 /*
 	99Lime.com HTML KickStart by Joshua Gatcke
 	kickstart-buttons.css
-	
+
 	Super Easy Cross Browser CSS3 Gradients
 	http://www.colorzilla.com/gradient-editor/
 */
@@ -59,21 +59,21 @@ a.button:active,
 a.button:visited:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
-input[type="button"]:active{-webkit-box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);-moz-box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);}
+input[type="button"]:active{-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);-moz-box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);}
 button[disabled],.disabled:active{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{*padding:7px 15px;}/*IE 7 ONLY*/
-	
+
 	a.btn,a.button{}/*overrides*/
 	button.small, a.btn.small, a.button.small{font-size:0.8em;padding:5px 10px;}
 	button.medium, a.btn.medium, a.button.medium{}/*default*/
 	button.large, a.btn.large, a.button.large{font-size:1.3em;padding:10px 20px;}
 	button.disabled, a.btn.disabled, a.button.disabled{color:#ccc;cursor:default;background:#efefef;}
 	button.disabled:hover, a.btn.disabled:hover, a.button.disabled:hover{border:1px solid #ccc;background:#efefef;}
-	
+
 	button:hover,
 	a.btn:hover,
 	a.button:hover,
@@ -89,8 +89,8 @@ input[type="button"]{*padding:7px 15px;}/*IE 7 ONLY*/
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
 	}
-	
-	
+
+
 /*---------------------------------
 	BUTTON BAR
 -----------------------------------*/
@@ -128,7 +128,7 @@ background:0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%); /* W3C */
 	}
-	
+
 	ul.button-bar li a{
 	margin:0;
 	display:inline-block;
@@ -147,7 +147,7 @@ background:0;
 	line-height:100%;
 	border-left:1px solid #fff;
 	}
-	
+
 	ul.button-bar li.first,
 	ul.button-bar li.first a{
 	-moz-border-radius-bottomleft: 5px;
@@ -160,7 +160,7 @@ background:0;
 	-webkit-background-clip: border;
 	background-clip: content-box;
 	}
-	
+
 	ul.button-bar li.last,
 	ul.button-bar li.last a{
 	-moz-border-radius-bottomright: 5px;
@@ -172,7 +172,7 @@ background:0;
 	-moz-background-clip:content-box;
 	-webkit-background-clip: border;
 	}
-	
+
 	ul.button-bar li a:hover{
 	background: rgb(252,252,252); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
@@ -182,15 +182,15 @@ background:0;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 	background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
 	}
-	
-	ul.button-bar li a:active{-webkit-box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);-moz-box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);box-shadow:inset 0px 3px 5px rgba(0,0,0,0.2),inset 0px -10px 20px rgba(0,0,0,0.07);border-left:1px solid #ccc;}
-	
+
+	ul.button-bar li a:active{-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);-moz-box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);box-shadow:inset 0 3px 5px rgba(0,0,0,0.2),inset 0 -10px 20px rgba(0,0,0,0.07);border-left:1px solid #ccc;}
+
 /*---------------------------------
 	STYLES
 -----------------------------------*/
 .pill{-webkit-border-radius:200em;-moz-border-radius:200em;border-radius:200em;}
 .pop{-webkit-box-shadow:0px 1px 5px rgba(0,0,0,0.2);-moz-box-shadow:0px 1px 5px rgba(0,0,0,0.2);box-shadow:0px 1px 5px rgba(0,0,0,0.2);}
-.inset{-webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.3);box-shadow:inset 0px 1px 3px rgba(0,0,0,0.3);}
+.inset{-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,0.3);-moz-box-shadow:inset 0 1px 3px rgba(0,0,0,0.3);box-shadow:inset 0 1px 3px rgba(0,0,0,0.3);}
 .square{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
 
 /*---------------------------------
@@ -213,7 +213,7 @@ background: -o-linear-gradient(top, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100
 background: linear-gradient(top, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
 }
-	
+
 	button.orange:hover,
 	a.btn.orange:hover,
 	a.button.orange:hover{
@@ -227,7 +227,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', end
 	background: linear-gradient(top, rgba(249,191,74,1) 0%,rgba(249,181,9,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9bf4a', endColorstr='#f9b509',GradientType=0 ); /* IE6-9 */
 	}
-	
+
 /*---------------------------------
 	BLUE
 -----------------------------------*/
@@ -248,7 +248,7 @@ background: -o-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
 background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
 }
-	
+
 	button.blue:hover,
 	a.btn.blue:hover,
 	a.button.blue:hover{
@@ -262,7 +262,7 @@ background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,r
 	background: linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcdff', endColorstr='#6eb0f2',GradientType=0 ); /* IE6-9 */
 	}
-	
+
 /*---------------------------------
 	PINK
 -----------------------------------*/
@@ -283,7 +283,7 @@ background: -o-linear-gradient(top, rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%
 background: linear-gradient(top, rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 ); /* IE6-9 */
 }
-	
+
 	button.pink:hover,
 	a.btn.pink:hover,
 	a.button.pink:hover{
@@ -297,7 +297,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', end
 	background: linear-gradient(top, rgba(255,169,213,1) 0%,rgba(254,112,185,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa9d5', endColorstr='#fe70b9',GradientType=0 ); /* IE6-9 */
 	}
-	
+
 /*---------------------------------
 	GREEN
 -----------------------------------*/
@@ -318,7 +318,7 @@ background: -o-linear-gradient(top, rgba(143,196,0,1) 0%,rgba(107,165,0,1) 100%)
 background: linear-gradient(top, rgba(143,196,0,1) 0%,rgba(107,165,0,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#6ba500',GradientType=0 ); /* IE6-9 */
 }
-	
+
 	button.green:hover,
 	a.btn.green:hover,
 	a.button.green:hover{
@@ -332,7 +332,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', end
 	background: linear-gradient(top, rgba(198,226,120,1) 0%,rgba(167,211,44,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e278', endColorstr='#a7d32c',GradientType=0 ); /* IE6-9 */
 	}
-	
+
 /*---------------------------------
 	RED
 -----------------------------------*/
@@ -353,7 +353,7 @@ background: -o-linear-gradient(top, rgba(229,60,22,1) 0%,rgba(207,4,4,1) 100%); 
 background: linear-gradient(top, rgba(229,60,22,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53c16', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
 }
-	
+
 	button.red:hover,
 	a.btn.red:hover,
 	a.button.red:hover{

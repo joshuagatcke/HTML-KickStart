@@ -1,7 +1,7 @@
 /*---------------------------------
 	SLIDESHOW2 - Slight Fixes for the slideshow layout *needs work
 -----------------------------------*/
-	
+
 	.slideshow{
 	clear:both;
 	margin:0;
@@ -10,7 +10,7 @@
 	height:auto;
 	overflow:hidden;
 	}
-	
+
 		.slideshow li{
 		list-style-type:none;
 		margin:0;
@@ -55,7 +55,7 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border: solid #fff 5px;
-	left: 0px;
+	left: 0;
 	background: #fff;
 }
 
