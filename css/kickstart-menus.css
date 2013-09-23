@@ -1,6 +1,6 @@
 /*
 	99Lime.com HTML KickStart by Joshua Gatcke
-	kickstart-menus.css 
+	kickstart-menus.css
 */
 
 /*---------------------------------
@@ -23,8 +23,8 @@ position:relative;z-index:1000;}
 	.menu ul li{display:block;width:100%;}
 	.menu ul li a{display:block;}
 		.menu ul ul{top:0;left:100%;}
-		
-/*--------------Dividers-------------------*/		
+
+/*--------------Dividers-------------------*/
 	.menu ul li.divider{border-top:1px solid #ccc;}
 	.menu ul li.divider a{border-top:1px solid #fff;}
 
@@ -32,7 +32,7 @@ position:relative;z-index:1000;}
 /*--------------Right---------------------*/
 	.menu li.right{float:right;}
 
-	
+
 /*--------------Arrows-------------------*/
 	.menu li.has-menu a{padding-right:25px;}
 	.menu li.has-menu span.arrow{border-style:solid;border-width:5px;
@@ -51,8 +51,8 @@ position:relative;z-index:1000;}
 	.menu.vertical.right ul{top:0;right:100%;left:auto;}
 	.menu.vertical.right li a{padding-left:25px;padding-right:20px;}
 	.menu.vertical.right li.has-menu span.arrow{right:auto;left:5px;margin-top:-4px;}
-	
-	
+
+
 /*---------------------------------
 	MENU STYLES
 	EDIT BELOW THIS LINE TO CUSTOMIZE
@@ -69,7 +69,7 @@ z-index:600;
 }
 
 	.menu li{}
-	
+
 		.menu li a{
 		text-shadow:0px 1px 1px #fff;
 		padding:15px 20px;
@@ -77,7 +77,7 @@ z-index:600;
 		font-size:0.9em;
 		color: #777;
 		}
-		
+
 		.menu li.current>a,
 		.menu li.current>a:hover,
 		.menu li.current.hover>a{
@@ -89,35 +89,35 @@ z-index:600;
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
 		background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
 		color:#fff;
-		text-shadow:0px -1px 0px rgba(0,0,0,0.2);
+		text-shadow:0px -1px 0 rgba(0,0,0,0.2);
 		cursor: default;
 		}
-		
+
 		.menu li a:hover,
 		.menu li.hover>a{
 		background:#f5f5f5;
 		}
-		
+
 	/* sub menus */
 	.menu ul{
 	background: #efefef;
 	border:1px solid #ccc;
 	}
-	
+
 	.menu ul li{}
 	.menu ul li a{}
-	
+
 		/* sub-sub menus */
 		.menu ul ul{}
 		.menu ul ul li{}
 		.menu ul ul li a{}
-		
+
 	/* arrows */
 	/* arrow down */  .menu li.has-menu span.arrow{border-color-top:#ccc;border-color:#ccc transparent transparent transparent;}
 	/* arrow left */  .menu li li.has-menu span.arrow, .menu.vertical li.has-menu span.arrow
 					   {border-color-left:#ccc;border-color:transparent transparent transparent #ccc;}
 	/* arrow right */ .menu.vertical.right li.has-menu span.arrow{border-color-right:#ccc;border-color:transparent #ccc transparent transparent;}
-	
+
 	/* dividers */ 	  .menu ul li.divider{border-top:1px solid #ccc;}
 					  .menu ul li.divider a{border-top:1px solid #fff;}
 
@@ -132,41 +132,41 @@ z-index:600;
 
 
 @media all and (max-width: 768px) {
-	
+
 	.grid .menu li,
 	.grid .menu.vertical li,
 	.grid .menu.vertical.right li{
 	display:block;
 	display:none;
 	}
-	
+
 	.grid .menu li.menu-toggle,
 	.grid .menu.vertical li.menu-toggle,
 	.grid .menu.vertical.right li.menu-toggle{
 	display:block;
 	}
-	
+
 	.grid .menu:hover li,
 	.grid .menu.vertical:hover li,
 	.grid .menu.vertical.right:hover li{
 	display:block;
 	}
-	
+
 	/* arrows */
 	.grid .menu li.has-menu span.arrow,
 	.grid .menu.vertical li.has-menu span.arrow,
 	.grid .menu.vertical.right li.has-menu span.arrow,
 	.grid .menu li li.has-menu span.arrow, .menu.vertical li.has-menu span.arrow
 	{border-color-top:#ccc;border-color:#ccc transparent transparent transparent;}
-	
+
 	.grid .menu.vertical.right li.has-menu span.arrow{
 	right:5px;left:auto;
 	}
-	
+
 	.grid .menu li a{
 	display:block;
 	}
-	
+
 	.grid .menu ul,
 	.grid .menu ul ul,
 	.grid .menu.vertical ul,
@@ -176,5 +176,5 @@ z-index:600;
 	left:0;
 	margin:10px;
 	}
-	
+
 }
