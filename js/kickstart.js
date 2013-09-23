@@ -94,12 +94,18 @@ jQuery(document).ready(function($){
     	var wantedTag = window.location.hash;
     	if (wantedTag != "")
     	{
-        	var allTabs = $("ul.tabs a[href^=" + wantedTag + "]").parents('ul.tabs').find('li');
-        	var defaultTab = allTabs.filter('.current').find('a').attr('href');
-        	$(defaultTab).hide();
-        	allTabs.removeClass('current');
-        	$("ul.tabs a[href^=" + wantedTag + "]").parent().addClass('current');
-        	$("#" + wantedTag.replace('#','')).show();
+			// This code can and does fail, hard, killing the entire app.
+			// Esp. when used with the jQuery.Address project.
+			try {
+				var allTabs = $("ul.tabs a[href^=" + wantedTag + "]").parents('ul.tabs').find('li');
+				var defaultTab = allTabs.filter('.current').find('a').attr('href');
+				$(defaultTab).hide();
+				allTabs.removeClass('current');
+				$("ul.tabs a[href^=" + wantedTag + "]").parent().addClass('current');
+				$("#" + wantedTag.replace('#','')).show();
+			} catch(e) {
+				// I have no idea what to do here, so I'm leaving this for the maintainer.
+			}
     	}
 
 	/*---------------------------------
