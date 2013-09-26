@@ -171,7 +171,11 @@ jQuery(document).ready(function($){
 	var aAsc = [];
 	$('table.sortable').each(function(){
 		$(this).find('thead th').each(function(index){$(this).attr('rel', index);});
-		$(this).find('th,td').each(function(){$(this).attr('value', $(this).text());});
+		$(this).find('th,td').each(function(){
+            if(typeof( $(this).attr('value')) == "undefined"){
+                $(this).attr('value', $(this).text());
+            }
+        });
 	});
 
 	// table click
