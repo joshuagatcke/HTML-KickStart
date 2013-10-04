@@ -132,24 +132,36 @@ padding:0;
 margin:0 0 20px 25px;
 }
 
-	li{
-	padding:5px 0;
-	margin:0;
-	}
+li{
+padding:5px 0;
+margin:0;
+}
 
+ul.list-unstyled{
+padding:0;
+margin:0 0 20px 0;
+}
+
+ul.list-unstyled li{
+padding:5px 0;
+margin:0;
+list-style-type:none;
+
+}
+	
 ul.alt{
 padding:0;
 margin:0 0 20px 0;
 }
 
-	ul.alt li{
-	list-style-type:none;
-	border-top:1px dotted #ccc;
-	border-bottom:1px dotted #ccc;
-	margin:0 0 -1px 0;
-	background:url(img/icon-arrow-right.png) no-repeat 5px 0.7em;
-	padding-left:20px;
-	}
+ul.alt li{
+list-style-type:none;
+border-top:1px dotted #ccc;
+border-bottom:1px dotted #ccc;
+margin:0 0 -1px 0;
+background:url(img/icon-arrow-right.png) no-repeat 5px 0.7em;
+padding-left:20px;
+}
 
 /*---------------------------------
 	PRE & CODE
