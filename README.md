@@ -1,5 +1,4 @@
-
-# HMTL KickStart #
+# HTML KickStart #
 by Joshua Gatcke
 http://www.99lime.com
 Version: 0.94
