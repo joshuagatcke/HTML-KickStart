@@ -94,16 +94,16 @@
 }
 
 #fancybox-close {
-	position: absolute;
+	position: relative;
 	width: 30px;
 	height: 30px;
 	background: transparent url('img/fancybox/fancybox.png') -40px 0;
 	cursor: pointer;
 	z-index: 1103;
-	display: none;
-	display: inline; 
+	display: none; 
 	float: right; 
-	top: -30px;
+	top: -480px;
+	right:-13px;
 }
 
 #fancybox-error {
@@ -148,7 +148,10 @@
 }
 
 #fancybox-right {
-	right: 0;
+	right:0;
+	display: inline;
+	position: absolute; 
+	padding-left: 150px;
 }
 
 #fancybox-left-ico, #fancybox-right-ico {
@@ -171,8 +174,6 @@
 #fancybox-right-ico {
 	background-image: url('img/fancybox/fancybox.png');
 	background-position: -40px -60px;
-	position:absolute;
-	right:-4px;
 }
 
 #fancybox-left:hover, #fancybox-right:hover {
@@ -185,7 +186,8 @@
 
 #fancybox-right:hover span {
 	left: auto;
-	right: 20px;
+	position:absolute;
+	right:-3px;
 }
 
 .fancybox-bg {
