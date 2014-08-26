@@ -95,14 +95,15 @@
 
 #fancybox-close {
 	position: absolute;
-	top: -15px;
-	right: -15px;
 	width: 30px;
 	height: 30px;
 	background: transparent url('img/fancybox/fancybox.png') -40px 0;
 	cursor: pointer;
 	z-index: 1103;
 	display: none;
+	display: inline; 
+	float: right; 
+	top: -30px;
 }
 
 #fancybox-error {
@@ -170,6 +171,8 @@
 #fancybox-right-ico {
 	background-image: url('img/fancybox/fancybox.png');
 	background-position: -40px -60px;
+	position:absolute;
+	right:-4px;
 }
 
 #fancybox-left:hover, #fancybox-right:hover {
