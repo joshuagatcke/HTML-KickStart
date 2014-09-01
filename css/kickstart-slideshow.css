@@ -34,6 +34,11 @@
 
 /** RESET AND LAYOUT
 ===================================*/
+.bx-wrapper, .bx-wrapper *{
+	-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+  	-moz-box-sizing: content-box;    /* Firefox, other Gecko */
+  	box-sizing: content-box;         /* Opera/IE 8+ */
+}
 
 .bx-wrapper {
 	position: relative;
