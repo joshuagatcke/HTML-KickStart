@@ -73,7 +73,7 @@ jQuery(document).ready(function($){
 		var current = $(this).find('li.current');
 		if(current.length < 1) { $(this).find('li:first').addClass('current'); }
 		current = $(this).find('li.current a').attr('href');
-		$(current).show();
+		if(current.indexOf('#') == 0) $(current).show(); //allow mix matched  url tabs with hash tabs
 	});
 
 	// tab click
