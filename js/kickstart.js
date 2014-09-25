@@ -109,7 +109,7 @@ jQuery(document).ready(function($){
 			try {
 				var allTabs = $("ul.tabs a[href*=" + wantedTag + "]").parents('ul.tabs').find('li');
 				var defaultTab = allTabs.filter('.current').find('a').attr('href');
-				var aCur = current.split("#");
+				var aCur = defaultTab.split("#");
 				var id = aCur.length > 0 ? aCur[ aCur.length - 1 ] : '';
 				$("#" + id).hide();
 				allTabs.removeClass('current');
