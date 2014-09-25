@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
 		overlayColor: '#000'
 	});
 
-	/*---------------------------------
+/*---------------------------------
 		Tabs
 	-----------------------------------*/
 	// tab setup
@@ -73,19 +73,29 @@ jQuery(document).ready(function($){
 		var current = $(this).find('li.current');
 		if(current.length < 1) { $(this).find('li:first').addClass('current'); }
 		current = $(this).find('li.current a').attr('href');
-		$(current).show();
+		var aCur = current.split("#");
+		var id = aCur.length > 0 ? aCur[ aCur.length - 1 ] : '';
+		$("#" + id).show();
 	});
 	
 	// tab click
-	$(document).on('click', 'ul.tabs a[href^="#"]', function(e){
+	$(document).on('click', 'ul.tabs a[href*="#"]', function(e){
 		e.preventDefault();
 		var tabs = $(this).parents('ul.tabs').find('li');
 		var tab_next = $(this).attr('href');
 		var tab_current = tabs.filter('.current').find('a').attr('href');
-		$(tab_current).hide();
+
+		var aCur = tab_current.split("#");
+		var idCur = aCur.length > 0 ? aCur[ aCur.length - 1 ] : '';
+		$("#" + idCur).hide();
+		
 		tabs.removeClass('current');
 		$(this).parent().addClass('current');
-		$(tab_next).show();
+		
+		var aNext = tab_next.split("#");
+		var idNext = aNext.length > 0 ? aNext[ aNext.length - 1 ] : '';
+		$("#" + idNext).show();
+		
 		history.pushState( null, null, window.location.search + $(this).attr('href') );
 		return false;
 	});
@@ -97,9 +107,11 @@ jQuery(document).ready(function($){
 			// This code can and does fail, hard, killing the entire app.
 			// Esp. when used with the jQuery.Address project.
 			try {
-				var allTabs = $("ul.tabs a[href^=" + wantedTag + "]").parents('ul.tabs').find('li');
+				var allTabs = $("ul.tabs a[href*=" + wantedTag + "]").parents('ul.tabs').find('li');
 				var defaultTab = allTabs.filter('.current').find('a').attr('href');
-				$(defaultTab).hide();
+				var aCur = current.split("#");
+				var id = aCur.length > 0 ? aCur[ aCur.length - 1 ] : '';
+				$("#" + id).hide();
 				allTabs.removeClass('current');
 				$("ul.tabs a[href^=" + wantedTag + "]").parent().addClass('current');
 				$("#" + wantedTag.replace('#','')).show();
