@@ -228,6 +228,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', end
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9bf4a', endColorstr='#f9b509',GradientType=0 ); /* IE6-9 */
 	}
 
+i.orange{
+color:#FF7B0D;
+}
+i.orange:hover{
+color:#F9B509;
+}
+
 /*---------------------------------
 	BLUE
 -----------------------------------*/
@@ -262,6 +269,13 @@ background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,r
 	background: linear-gradient(top, rgba(155,205,255,1) 0%,rgba(134,192,250,1) 44%,rgba(110,176,242,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcdff', endColorstr='#6eb0f2',GradientType=0 ); /* IE6-9 */
 	}
+
+i.blue{
+color:#4096EE;
+}
+i.blue:hover{
+color:#6EB0F2;
+}
 
 /*---------------------------------
 	PINK
@@ -298,6 +312,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', end
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa9d5', endColorstr='#fe70b9',GradientType=0 ); /* IE6-9 */
 	}
 
+i.pink{
+color:#DE017C;
+}
+i.pink:hover{
+color:#FE70B9;
+}
+
 /*---------------------------------
 	GREEN
 -----------------------------------*/
@@ -333,6 +354,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', end
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e278', endColorstr='#a7d32c',GradientType=0 ); /* IE6-9 */
 	}
 
+i.green{
+color:#6BA500;
+}
+i.green:hover{
+color:#A7D32B;
+}
+
 /*---------------------------------
 	RED
 -----------------------------------*/
@@ -367,3 +395,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53c16', end
 	background: linear-gradient(top, rgba(238,106,76,1) 0%,rgba(251,33,33,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee6a4c', endColorstr='#fb2121',GradientType=0 ); /* IE6-9 */
 	}
+
+
+i.red{
+color:#CF0404;
+}
+i.red:hover{
+color:#FB2121;
+}
