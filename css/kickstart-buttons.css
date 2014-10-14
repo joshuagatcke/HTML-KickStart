@@ -229,10 +229,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', end
 	}
 
 i.orange{
-color:#FF7B0D;
+color:#FF7B0D !important;
 }
 i.orange:hover{
-color:#F9B509;
+color:#F9B509 !important;
 }
 
 /*---------------------------------
@@ -271,10 +271,10 @@ background: linear-gradient(top, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,r
 	}
 
 i.blue{
-color:#4096EE;
+color:#4096EE !important;
 }
 i.blue:hover{
-color:#6EB0F2;
+color:#6EB0F2 !important;
 }
 
 /*---------------------------------
@@ -313,10 +313,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', end
 	}
 
 i.pink{
-color:#DE017C;
+color:#DE017C !important;
 }
 i.pink:hover{
-color:#FE70B9;
+color:#FE70B9 !important;
 }
 
 /*---------------------------------
@@ -355,10 +355,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', end
 	}
 
 i.green{
-color:#6BA500;
+color:#6BA500 !important;
 }
 i.green:hover{
-color:#A7D32B;
+color:#A7D32B !important;
 }
 
 /*---------------------------------
@@ -398,8 +398,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53c16', end
 
 
 i.red{
-color:#CF0404;
+color:#CF0404 !important;
 }
 i.red:hover{
-color:#FB2121;
+color:#FB2121 !important;
 }
