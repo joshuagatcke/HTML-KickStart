@@ -72,6 +72,13 @@
 	background: #fff;
 }
 
+#fancybox-wrap,
+#fancybox-wrap *{
+-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: 	content-box;    /* Firefox, other Gecko */
+box-sizing: 		content-box;         /* Opera/IE 8+ */
+}
+
 #fancybox-content {
 	width: 0;
 	height: 0;
