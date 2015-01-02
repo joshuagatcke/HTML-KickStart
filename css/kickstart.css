@@ -19,7 +19,7 @@
 @import url(kickstart-slideshow.css);
 @import url(prettify.css);
 @import url(tiptip.css);
-@import url(fonts/fontawesome/css/font-awesome.min.css);
+@import url(fonts/font-awesome-4.2.0/css/font-awesome.min.css);
 
 /*---------------------------------
 	HTML ELEMENTS
@@ -161,6 +161,17 @@ border-bottom:1px dotted #ccc;
 margin:0 0 -1px 0;
 background:url(img/icon-arrow-right.png) no-repeat 5px 0.7em;
 padding-left:20px;
+}
+
+ul.icons{
+margin:0 0 20px 0;
+padding:0;
+}
+
+ul.icons li{
+list-style-type:none;
+margin:0;
+padding:5px 0;
 }
 
 /*---------------------------------
