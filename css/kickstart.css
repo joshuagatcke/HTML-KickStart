@@ -137,12 +137,12 @@ padding:5px 0;
 margin:0;
 }
 
-ul.list-unstyled{
+ul.unstyled{
 padding:0;
 margin:0 0 20px 0;
 }
 
-ul.list-unstyled li{
+ul.unstyled li{
 padding:5px 0;
 margin:0;
 list-style-type:none;
