@@ -1,29 +1,28 @@
 /*---------------------------------
 	SLIDESHOW2 - Slight Fixes for the slideshow layout *needs work
 -----------------------------------*/
+.slideshow {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
 
-	.slideshow{
-	clear:both;
-	margin:0;
-	padding:0;
-	width:auto;
-	height:auto;
-	overflow:hidden;
-	}
-
-		.slideshow li{
-		list-style-type:none;
-		margin:0;
-		padding:0;
-		float:left;
-		display:block;
-		}
+.slideshow li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	display: block;
+}
 
 /**
- * BxSlider v4.0 - Fully loaded, responsive content slider
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
  * http://bxslider.com
  *
- * Written by: Steven Wanderski, 2012
+ * Written by: Steven Wanderski, 2014
  * http://stevenwanderski.com
  * (while drinking Belgian ales and listening to jazz)
  *
@@ -34,21 +33,16 @@
 
 /** RESET AND LAYOUT
 ===================================*/
-.bx-wrapper, .bx-wrapper *{
-	-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
-  	-moz-box-sizing: content-box;    /* Firefox, other Gecko */
-  	box-sizing: content-box;         /* Opera/IE 8+ */
-}
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 0 60px;
+	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
 }
 
 .bx-wrapper img {
-	width: 100%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -59,9 +53,16 @@
 	-moz-box-shadow: 0 0 5px #ccc;
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
-	border: solid #fff 5px;
-	left: 0;
+	border:  5px solid #fff;
+	left: -5px;
 	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
 }
 
 .bx-wrapper .bx-pager,
