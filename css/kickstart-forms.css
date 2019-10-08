@@ -2,7 +2,7 @@
 	FORMS
 -----------------------------------*/
 form{
-padding:0;
+padding:4;
 margin:0;
 }
 
@@ -82,7 +82,7 @@ vertical-align: middle;
 width:auto;
 zoom:1;
 margin:0;
-border:1px solid #ccc;
+border:1px solid grey;
 font-size:1em;
 padding:5px 0;
 text-indent: 5px;
@@ -109,7 +109,7 @@ box-sizing: border-box;
 	input[disabled="disabled"], input.disabled{
 	color:#999;
 	background:#f5f5f5;
-	-moz-box-shadow:inset 0 0 2px #ddd;
+	-moz-box-shadow:inset 0 0 2px grey;
 	-webkit-box-shadow:inset 0 1px 2px #ddd;
 	box-shadow:inset 0 1px 2px #ddd;
 	}
@@ -122,9 +122,9 @@ box-sizing: border-box;
 	select:focus,
 	input[type="file"]:focus,
 	input[type="password"]:focus{
-	-webkit-box-shadow: 0 0 7px #6DB9FF;
-	-moz-box-shadow   : 0 0 7px #6DB9FF;
-	box-shadow        : 0 0 7px #6DB9FF;
+	-webkit-box-shadow: 0 0 7px cyan;
+	-moz-box-shadow   : 0 0 7px cyan;
+	box-shadow        : 0 0 7px cyan;
 	border: 1px solid #50B1FE;
 	outline: none;
 	}
