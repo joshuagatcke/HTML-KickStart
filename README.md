@@ -19,9 +19,9 @@ Layouts that used to take hours now take minutes.
 ## Getting Started ##
 
 1. Download HTML KickStart
-2. Open blank.html in your favorite text editor
+2. Open blank.html in your favorite text editor.
 3. Start adding KickStart Elements to blank.html: (http://www.99lime.com/elements/)
-4. Save blank.html and open in your favorite Web Browser
+4. Save blank.html and open in your favorite Web Browser.
 5. Have fun!
 
 
