@@ -1,4 +1,4 @@
-# HTML KickStart #
+# HTML Super KickStart #
 by Joshua Gatcke
 http://www.99lime.com
 Version: 0.94
