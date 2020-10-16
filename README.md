@@ -2,7 +2,7 @@
 by Joshua Gatcke
 http://www.99lime.com
 Version: 0.94
-
+# Intearesting
 ## What is HTML KickStart? ##
 
 HTML KickStart is an ultra–lean set of HTML5, CSS, and jQuery (javascript) files, layouts, and elements designed to give you a headstart and save you 10's of hours on your next web project. 
