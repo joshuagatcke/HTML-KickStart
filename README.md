@@ -26,7 +26,7 @@ Layouts that used to take hours now take minutes.
 
 
 ## HTML KickStart is FREE and Open Source. ##
-### Release Under the MIT Open Source License. ###
+## Release Under the MIT Open Source License. ##
 
 Copyright © 2011-2012 Joshua Gatcke http://www.99lime.com | HTML KickStart
 
